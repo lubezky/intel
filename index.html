@@ -1,208 +1,181 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresa en Crisis | Problemas Operativos y pérdida de eficiencia</title>
-    <link rel="canonical" href="https://inteligencia.com/" />
-    <meta name="description" content="Análisis sobre la crisis operativa en las organizaciones. Qué hacer cuando los procesos fallan, los resultados caen y la ejecución pierde consistencia.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SCHEMA OPTIMIZADO -->
-    <script type="application/ld+json">
+<title>Inteligencia | Coordinación y toma de decisiones</title>
+<meta name="description" content="La inteligencia en una organización no es lo que una persona sabe, sino lo que un grupo es capaz de hacer con lo que sabe.">
+
+<link rel="canonical" href="https://inteligencia.com/">
+
+<!-- SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Person",
-          "@id": "https://lubezky.com/#sergio",
-          "name": "Sergio Lubezky",
-          "url": "https://lubezky.com/",
-          "sameAs": [
-            "https://lubezky.com/",
-            "https://elmismobarco.com/",
-            "https://inteligencia.com/",
-            "https://unnuevopuntodevista.com/",
-            "https://liderazgointerino.com/",
-            "https://coachdefoto.com/",
-            "https://musica.sergiolubezky.com/"
-          ],
-          "knowsAbout": [
-            "Operational Efficiency",
-            "Crisis Management",
-            "Business Strategy",
-            "Process Optimization"
-          ]
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://inteligencia.com/#website",
-          "name": "Inteligencia",
-          "url": "https://inteligencia.com/",
-          "publisher": { "@id": "https://lubezky.com/#sergio" },
-          "about": { "@id": "https://lubezky.com/#sergio" },
-          "inLanguage": "es"
-        },
-        {
-          "@type": "Article",
-          "@id": "https://inteligencia.com/#article",
-          "headline": "Empresa en Crisis: Problemas Operativos",
-          "author": { "@id": "https://lubezky.com/#sergio" },
-          "isPartOf": { "@id": "https://inteligencia.com/#website" },
-          "inLanguage": "es",
-          "about": [
-            { "@type": "Thing", "name": "Eficiencia Operativa" },
-            { "@type": "Thing", "name": "Crisis Empresarial" },
-            { "@type": "Thing", "name": "Ejecución" }
-          ]
-        }
-      ]
+      "@type": "Person",
+      "@id": "https://lubezky.com/#sergio",
+      "name": "Sergio Lubezky",
+      "url": "https://lubezky.com/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://inteligencia.com/#website",
+      "url": "https://inteligencia.com/",
+      "name": "Inteligencia",
+      "publisher": { "@id": "https://lubezky.com/#sergio" },
+      "inLanguage": "es"
     }
-    </script>
+  ]
+}
+</script>
 
-    <style>
-        body { 
-            margin: 0; 
-            display: flex; 
-            flex-direction: column; 
-            min-height: 100vh; 
-            background-color: #fff; 
-            color: #1a1a1a; 
-            font-family: 'Georgia', serif; 
-            line-height: 1.8; 
-        }
-        main { 
-            flex: 1; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            padding: 60px 20px; 
-        }
-        .content-box { 
-            max-width: 700px; 
-            text-align: center; 
-            font-size: 1.2rem; 
-        }
-        h1 { 
-            font-size: 1.5rem;
-            font-weight: bold; 
-            margin-bottom: 16px; 
-        }
-        p { margin-bottom: 12px; }
+<style>
+body { 
+    margin: 0; 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+    background-color: #fff; 
+    color: #1a1a1a; 
+    font-family: 'Georgia', serif; 
+    line-height: 1.8; 
+}
 
-        .content-box a { 
-            color: #000; 
-            text-decoration: none; 
-            font-weight: bold; 
-            border-bottom: 1px solid #ddd; 
-        }
-        .content-box a:hover { 
-            border-bottom: 1px solid #000; 
-        }
+main { 
+    flex: 1; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 60px 20px; 
+}
 
-        footer { 
-            padding: 60px 20px; 
-            text-align: center; 
-            font-family: 'Helvetica Neue', Arial, sans-serif; 
-        }
-        .profile-img { 
-            width: 75px; 
-            height: 75px; 
-            border-radius: 50%; 
-            margin-bottom: 10px; 
-            object-fit: cover; 
-            border: 1px solid #eee; 
-        }
-        .name-link { 
-            text-decoration: none; 
-            color: inherit; 
-            display: block; 
-            margin-bottom: 2px; 
-        }
-        .name { 
-            font-weight: 600; 
-            font-size: 1rem; 
-            letter-spacing: 1.5px; 
-            text-transform: uppercase; 
-        }
-        .footer-bio {
-            max-width: 650px;
-            margin: 0 auto 30px auto; 
-            font-size: 0.95rem;
-            color: #444;
-            line-height: 1.7;
-        }
-        .footer-bio p { margin: 0; }
-        .footer-bio a {
-            color: #1a1a1a;
-            text-decoration: none;
-            font-weight: 600;
-            border-bottom: 1px solid #eee;
-            transition: all 0.3s ease;
-        }
-        .footer-bio a:hover {
-            border-bottom: 1px solid #1a1a1a;
-            background-color: #f9f9f9;
-            color: #000;
-        }
-        .social-nav { 
-            list-style: none; 
-            padding: 0; 
-            margin: 0; 
-            display: flex; 
-            flex-wrap: wrap; 
-            justify-content: center; 
-            gap: 12px; 
-            font-size: 0.85rem; 
-        }
-        .social-nav a { 
-            color: #666; 
-            text-decoration: none; 
-        }
-        .social-nav a:hover { 
-            color: #000; 
-        }
-        .social-nav li:not(:last-child)::after { 
-            content: "-"; 
-            margin-left: 12px; 
-            color: #ccc; 
-        }
-    </style>
+.content-box { 
+    max-width: 700px; 
+    text-align: center; 
+    font-size: 1.2rem; 
+}
+
+h1 { 
+    font-size: 1.5rem;
+    font-weight: bold; 
+    margin-bottom: 16px; 
+}
+
+p { margin-bottom: 14px; }
+
+.content-box a { 
+    color: #000; 
+    text-decoration: none; 
+    font-weight: bold; 
+    border-bottom: 1px solid #ddd; 
+}
+
+.content-box a:hover { 
+    border-bottom: 1px solid #000; 
+}
+
+/* FOOTER */
+footer { 
+    padding: 60px 20px; 
+    text-align: center; 
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+}
+
+.profile-img { 
+    width: 75px; 
+    height: 75px; 
+    border-radius: 50%; 
+    margin-bottom: 10px; 
+    object-fit: cover; 
+    border: 1px solid #eee; 
+}
+
+.name-link { 
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+    margin-bottom: 2px; 
+}
+
+.name { 
+    font-weight: 600; 
+    font-size: 1rem; 
+    letter-spacing: 1.5px; 
+    text-transform: uppercase; 
+}
+
+.footer-bio {
+    max-width: 650px;
+    margin: 0 auto 30px auto; 
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.7;
+}
+
+.footer-bio a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+}
+
+.footer-bio a:hover {
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.social-nav { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 12px; 
+    font-size: 0.85rem; 
+}
+
+.social-nav a { 
+    color: #666; 
+    text-decoration: none; 
+}
+
+.social-nav a:hover { 
+    color: #000; 
+}
+</style>
 </head>
 
 <body>
 
 <main>
-    <div class="content-box">
-        <h1>Empresa en Crisis: Problemas Operativos</h1>
+<div class="content-box">
 
-        <p>
-            No siempre es evidente cuándo una empresa entra en crisis. En muchos casos, todo comienza con pequeños desajustes: procesos que se ralentizan, decisiones que no se ejecutan y resultados que dejan de ser consistentes. Son señales sutiles, pero indican que algo en la operación ha comenzado a perder coherencia.
-        </p>
+<h1>Inteligencia</h1>
 
-        <p>
-            Con el tiempo, esos síntomas dejan de ser aislados y empiezan a acumularse. La ejecución pierde claridad, el equipo se descoordina y la organización ya no responde con la misma precisión a las demandas del entorno. Lo que antes funcionaba de manera natural, empieza a fallar de forma sistemática.
-        </p>
+<p>
+Durante mucho tiempo, la inteligencia se ha entendido como algo individual: la capacidad de una persona para analizar, memorizar o resolver problemas por sí sola. Esa definición funciona en lo académico, pero se queda corta dentro de una organización, donde los resultados no dependen de una persona, sino de cómo interactúan varias.
+</p>
 
-        <p>
-            En ese punto, lo más común es intentar entender qué está fallando. Se revisan procesos, se analizan indicadores y se buscan explicaciones dentro de la cadena operativa. Sin embargo, cuando la inercia ya está en marcha, el análisis por sí solo deja de ser suficiente.
-        </p>
+<p>
+Una empresa no falla por falta de talento individual. Falla cuando ese talento no logra coordinarse, cuando las decisiones no se alinean y cuando la información no se convierte en acción. En ese contexto, la inteligencia deja de ser lo que alguien sabe y se convierte en lo que un grupo es capaz de hacer con lo que sabe.
+</p>
 
-        <p>
-            La crisis operativa no es únicamente un problema de diagnóstico, es un problema de ejecución. Requiere intervención directa para reordenar el sistema, recuperar la eficiencia y restablecer la capacidad de respuesta de la organización.
-        </p>
+<p>
+Esto se refleja en cosas muy concretas: cómo se toman decisiones, qué tan claro es el rumbo y qué tan consistentemente se ejecuta. Cuando esa capacidad se pierde, empiezan a aparecer señales conocidas: decisiones que se retrasan, prioridades que cambian constantemente y equipos que trabajan sin una dirección clara. No es un problema de capacidad, es un problema de coordinación.
+</p>
 
-        <p>
-            Cuando una empresa pierde su capacidad de ejecutar, lo que está en juego no es solo el resultado, sino la viabilidad misma de la operación. En ese momento, es necesario intervenir en los procesos de decisión, control y coordinación.
-        </p>
+<p>
+Por eso, desarrollar inteligencia en una organización no significa agregar más información, sino ordenar la forma en la que se observa, se decide y se actúa. Es un proceso que requiere claridad, estructura y, en muchos casos, <a href="https://liderazgointerino.com">intervención directa</a> para restablecer esa capacidad.
+</p>
 
-        <p>
-            Ahí es donde el <a href="https://liderazgointerino.com">liderazgo interino</a> enfocado en eficiencia cobra sentido: no como teoría, sino como acción directa sobre el sistema.
-        </p>
+<p>
+Ahí es donde la inteligencia deja de ser un concepto y se convierte en acción.
+</p>
 
-        <p>
-            Si tu operación está perdiendo coherencia o los resultados indican un deterioro estructural, actuar a tiempo no es una opción, es una necesidad.
-        </p>
-    </div>
+</div>
 </main>
 
 <footer>
@@ -213,14 +186,16 @@
     </a>
 
     <div class="footer-bio">
-        <p>
-            Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
-            Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a>, 
-            la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a> 
-            y la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a>, 
-            como distintas formas de comprender una misma realidad.
-        </p>
-    </div>
+    <p>
+        Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
+        Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a> aplicada, 
+        la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a>, 
+        la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a> 
+        y la música como otra forma de <a href="https://musica.sergiolubezky.com" target="_blank">comunicar</a>, 
+        bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com" target="_blank">un nuevo punto de vista</a> 
+        para entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.
+    </p>
+</div>
     
     <ul class="social-nav">
         <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
@@ -228,6 +203,7 @@
         <li><a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a></li>
         <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
         <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a></li>
+        <li><a href="https://musica.sergiolubezky.com" target="_blank">Música</a></li>
         <li><a href="https://coachdefoto.com" target="_blank">Fotografía</a></li>
     </ul>
 </footer>
