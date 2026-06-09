@@ -3,142 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresa en Crisis | Qué hacer cuando una organización pierde dirección</title>
-    <meta name="description" content="Qué hacer cuando una empresa entra en crisis. Análisis sistémico sobre la pérdida de control en procesos, liderazgo o resultados corporativos.">
+    <title>Empresa en Crisis | Intervención Estructural y Gestión de Riesgo en LATAM</title>
+    <meta name="description" content="Las crisis en filiales regionales se incuban en el silencio operativo. Análisis sobre cómo diagnosticar el quiebre sistémico y ejecutar un rescate directivo.">
     <meta name="author" content="Sergio Lubezky">
-
     <link rel="canonical" href="https://inteligencia.com/empresa-en-crisis/" />
-    
-    <meta property="og:locale" content="es_MX" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Empresa en Crisis | Qué hacer cuando una organización pierde dirección" />
-    <meta property="og:description" content="Las crisis organizacionales no estallan de golpe, se incuban en silencio. Una crisis exige decisiones a tiempo." />
-    <meta property="og:url" content="https://inteligencia.com/empresa-en-crisis/" />
-    <meta property="og:site_name" content="Inteligencia" />
-    <meta property="og:image" content="https://lubezky.com/foto-sergio.jpg" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@slubezky" />
-    <meta name="twitter:creator" content="@slubezky" />
-    <meta name="twitter:title" content="Empresa en Crisis | Qué hacer cuando una organización pierde dirección" />
-    <meta name="twitter:description" content="Las crisis organizacionales no estallan de golpe, se incuban en silencio. Una crisis exige decisiones a tiempo." />
-    <meta name="twitter:image" content="https://lubezky.com/foto-sergio.jpg" />
-
     <style>
-        /* --- ESTÉTICA MASTER LUBEZKY --- */
-        body { 
-            margin: 0; 
-            display: flex; 
-            flex-direction: column; 
-            min-height: 100vh; 
-            background-color: #fff; 
-            color: #1a1a1a; 
-            font-family: 'Georgia', serif; 
-            line-height: 1.8; 
-            -webkit-font-smoothing: antialiased;
-        }
-
-        main { 
-            flex: 1; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            padding: 80px 20px; 
-        }
-
-        .content-box { 
-            max-width: 700px; 
-            text-align: center; 
-            font-size: 1.2rem; 
-        }
-
-        h1 { 
-            font-size: 1.5rem;
-            font-weight: bold; 
-            margin-bottom: 24px; 
-            text-transform: uppercase; 
-            letter-spacing: 2px;
-        }
-
-        p { margin-bottom: 18px; }
-
-        .content-box a { 
-            color: #000; 
-            text-decoration: none; 
-            font-weight: bold; 
-            border-bottom: 1px solid #ddd; 
-            transition: border-color 0.3s;
-        }
-
-        .content-box a:hover { 
-            border-bottom: 1px solid #000; 
-        }
-
-        /* --- FOOTER UNIFICADO DE 3 COLUMNAS --- */
-        footer {
-            padding: 60px 20px 40px 20px;
-            background-color: #ffffff;
-            border-top: 1px solid #f2f2f2;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 0.9rem;
-            line-height: 1.6;
-        }
-        .footer-grid {
-            max-width: 900px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            gap: 50px;
-            text-align: left;
-        }
-        @media (max-width: 768px) {
-            .footer-grid { grid-template-columns: 1fr; gap: 35px; text-align: center; }
-        }
-        .footer-col h3 {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #888;
-            margin-top: 0;
-            margin-bottom: 20px;
-        }
+        /* (Se repiten exactamente los mismos estilos del Home para mantener consistencia visual) */
+        body { margin: 0; display: flex; flex-direction: column; min-height: 100vh; background-color: #fff; color: #1a1a1a; font-family: 'Georgia', serif; line-height: 1.8; -webkit-font-smoothing: antialiased; }
+        main { flex: 1; display: flex; align-items: center; justify-content: center; padding: 80px 20px; }
+        .content-box { max-width: 750px; text-align: left; font-size: 1.15rem; }
+        h1 { font-size: 2rem; font-weight: bold; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; text-align: center; font-family: 'Helvetica Neue', Arial, sans-serif; }
+        .subtitle { font-size: 1.1rem; color: #666; text-align: center; margin-bottom: 40px; font-style: italic; }
+        h2 { font-size: 1.4rem; font-weight: bold; margin-top: 35px; margin-bottom: 15px; font-family: 'Helvetica Neue', Arial, sans-serif; border-left: 4px solid #1a1a1a; padding-left: 15px; }
+        p { margin-bottom: 20px; text-align: justify; }
+        strong { color: #000; }
+        .cta-container { margin: 50px 0; padding: 30px; background-color: #f9f9f9; border-radius: 4px; border: 1px solid #eee; text-align: center; }
+        .cta-container p { text-align: center; margin-bottom: 20px; font-size: 1.1rem; }
+        .btn-linkedin { display: inline-block; padding: 12px 30px; background-color: #0077b5; color: #fff !important; text-decoration: none !important; font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: bold; border-radius: 4px; font-size: 1rem; letter-spacing: 1px; transition: background-color 0.3s; border: none !important; }
+        .btn-linkedin:hover { background-color: #005582; }
+        .content-box a { color: #000; text-decoration: none; font-weight: bold; border-bottom: 1px solid #ddd; transition: border-color 0.3s; }
+        .content-box a:hover { border-bottom: 1px solid #1a1a1a; }
+        footer { padding: 60px 20px 40px 20px; background-color: #ffffff; border-top: 1px solid #f2f2f2; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.9rem; line-height: 1.6; }
+        .footer-grid { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 50px; text-align: left; }
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 35px; text-align: center; } }
+        .footer-col h3 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-top: 0; margin-bottom: 20px; }
         .footer-col p { color: #555; margin: 0; font-size: 0.9rem; }
         .footer-col ul { list-style: none; padding: 0; margin: 0; }
         .footer-col ul li { margin-bottom: 12px; }
         .footer-col ul li a { color: #1a1a1a; text-decoration: none; font-weight: 600; border-bottom: 1px solid #eee; transition: all 0.3s; }
         .footer-col ul li a:hover { border-bottom: 1px solid #1a1a1a; }
-        
         .footer-socials { display: flex; gap: 15px; margin-top: 20px; }
         @media (max-width: 768px) { .footer-socials { justify-content: center; } }
-        .footer-socials a { color: #666; text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: color 0.3s; }
+        .footer-socials a { color: #666; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
         .footer-socials a:hover { color: #000; }
-        
-        .footer-bottom {
-            max-width: 900px;
-            margin: 50px auto 0 auto;
-            padding-top: 20px;
-            border-top: 1px solid #f9f9f9;
-            text-align: center;
-            font-size: 0.8rem;
-            color: #999;
-        }
+        .footer-bottom { max-width: 900px; margin: 50px auto 0 auto; padding-top: 20px; border-top: 1px solid #f9f9f9; text-align: center; font-size: 0.8rem; color: #999; }
     </style>
 </head>
-
 <body>
 
 <main>
     <div class="content-box">
         <h1>Empresa en Crisis</h1>
-        <p>Las crisis organizacionales rara vez estallan de golpe; se incuban en silencio a través de pequeños desajustes cotidianos que se normalizan. Comienzan cuando las metas se vuelven difusas, los entregables se retrasan sin consecuencias y los resultados dejan de ser consistentes.</p>
-        <p>Cuando la inercia del deterioro avanza, el análisis tradicional se vuelve obsoleto. Entender el problema ya no es suficiente; una crisis no se resuelve entendiendo, se resuelve decidiendo. El verdadero peligro de una organización en este estado no es cometer errores, sino la parálisis por análisis.</p>
-        <p>Mitigar un escenario de quiebre exige acciones quirúrgicas que estabilicen la estructura de inmediato. Si el ecosistema interno ha perdido el control de sus variables clave, la solución pasa por una reconfiguración de mandos mediante un <a href="https://liderazgointerino.com">Liderazgo Interino</a> diseñado para absorber el impacto y trazar un rumbo claro de salida.</p>
+        <div class="subtitle">Las crisis corporativas no estallan por falta de advertencias, sino por la normalización del desvío.</div>
+
+        <p>En las operaciones corporativas transnacionales, una <strong>crisis organizacional</strong> real rara vez aparece como un evento sísmico inesperado. El colapso financiero o el paro operativo de una filial es, casi siempre, el desenlace final de una serie de síntomas menores que la dirección local ignoró, justificó o normalizó bajo la inercia del día a día. Los retrasos crónicos, los reportes maquillados y las metas sistemáticamente incumplidas son la antesala del quiebre.</p>
+        
+        <p>Cuando una filial en América Latina entra en este bucle de deterioro, la distancia con el corporativo central agrava el escenario. Los canales de información se vuelven políticos: la dirección local se enfoca en gestionar la percepción de la matriz en lugar de corregir los problemas del mercado. Para cuando la sede global detecta la caída real en los márgenes y decide intervenir, el flujo de caja operativo ya se encuentra bajo una presión insostenible.</p>
+
+        <h2>La Parálisis por Análisis frente al Estado de Urgencia</h2>
+        <p>El error más costoso en este punto crítico es intentar resolver la crisis mediante consultorías tradicionales y comités de auditoría lentos. Un sistema en colapso no necesita más diagnósticos; necesita ejecución inmediata. Una crisis exige decisiones en tiempo real, velocidad de reacción y la frialdad estratégica necesaria para cortar los flujos que están desangrando la operación.</p>
+
+        <p>Estabilizar una operación bajo fuego requiere una reconfiguración agresiva de la estructura de toma de decisiones. Es ahí donde el esquema de <a href="https://liderazgointerino.com">Liderazgo Interino enfocado en Dirección Regional</a> se vuelve una necesidad de negocio. Al carecer de vínculos políticos con la historia de la empresa y poseer un mandato exclusivo de rescate, un Director Interino neutraliza la inercia interna, toma el control de las variables críticas en LATAM y traza una ruta clara de reestructuración hacia la rentabilidad.</p>
+
+        <!-- CALL TO ACTION LINKEDIN -->
+        <div class="cta-container">
+            <p><strong>¿Tu filial en Latinoamérica muestra señales latentes de quiebre operativo o desconexión directiva?</strong><br>Hablemos directamente en LinkedIn para evaluar un diagnóstico de urgencia y aplicar contramedidas estructurales inmediatas.</p>
+            <a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank" class="btn-linkedin">Conectar en LinkedIn</a>
+        </div>
     </div>
 </main>
 
 <footer>
+    <!-- (Mismo bloque de footer unificado) -->
     <div class="footer-grid">
-        <!-- Columna 1: El Autor -->
         <div class="footer-col">
             <h3>Sergio Lubezky A.</h3>
             <p>Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. Exploro cómo los sistemas complejos, los equipos de trabajo y las ideas colectivas se coordinan para transformar crisis operativas en ventajas estratégicas resilientes.</p>
@@ -150,7 +77,6 @@
                 <a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a>
             </div>
         </div>
-        <!-- Columna 2: Navegación de Inteligencia.com -->
         <div class="footer-col">
             <h3>Contenido</h3>
             <ul>
@@ -159,7 +85,6 @@
                 <li><a href="/problemas-operativos/">Problemas Operativos</a></li>
             </ul>
         </div>
-        <!-- Columna 3: El Universo Cruzado -->
         <div class="footer-col">
             <h3>Ecosistema</h3>
             <ul>
