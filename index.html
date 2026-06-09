@@ -3,144 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Inteligencia | Coordinación y toma de decisiones</title>
-    <meta name="description" content="La inteligencia en una organización no es lo que una persona sabe, sino lo que un grupo es capaz de hacer con lo que sabe. Una perspectiva de Sergio Lubezky.">
+    <title>Inteligencia Organizacional | Coordinación y Dirección Regional en LATAM</title>
+    <meta name="description" content="La inteligencia de una empresa no es el talento de sus individuos, sino su capacidad de coordinación colectiva y ejecución en mercados complejos como Latinoamérica.">
     <meta name="author" content="Sergio Lubezky">
-
     <link rel="canonical" href="https://inteligencia.com/">
-
-    <meta property="og:locale" content="es_MX" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Inteligencia | Coordinación y toma de decisiones" />
-    <meta property="og:description" content="La inteligencia organizacional no es talento individual, es capacidad de coordinación y ejecución colectiva." />
-    <meta property="og:url" content="https://inteligencia.com/" />
-    <meta property="og:site_name" content="Inteligencia" />
-    <meta property="og:image" content="https://lubezky.com/foto-sergio.jpg" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@slubezky" />
-    <meta name="twitter:creator" content="@slubezky" />
-    <meta name="twitter:title" content="Inteligencia | Coordinación y toma de decisiones" />
-    <meta name="twitter:description" content="La inteligencia organizacional no es talento individual, es capacidad de coordinación y ejecución colectiva." />
-    <meta name="twitter:image" content="https://lubezky.com/foto-sergio.jpg" />
-
+    
+    <!-- Estilos Master e Inyección de Footer -->
     <style>
-        /* --- ESTÉTICA MASTER LUBEZKY --- */
-        body { 
-            margin: 0; 
-            display: flex; 
-            flex-direction: column; 
-            min-height: 100vh; 
-            background-color: #fff; 
-            color: #1a1a1a; 
-            font-family: 'Georgia', serif; 
-            line-height: 1.8; 
-            -webkit-font-smoothing: antialiased;
-        }
+        body { margin: 0; display: flex; flex-direction: column; min-height: 100vh; background-color: #fff; color: #1a1a1a; font-family: 'Georgia', serif; line-height: 1.8; -webkit-font-smoothing: antialiased; }
+        main { flex: 1; display: flex; align-items: center; justify-content: center; padding: 80px 20px; }
+        .content-box { max-width: 750px; text-align: left; font-size: 1.15rem; }
+        h1 { font-size: 2rem; font-weight: bold; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; text-align: center; font-family: 'Helvetica Neue', Arial, sans-serif; }
+        .subtitle { font-size: 1.1rem; color: #666; text-align: center; margin-bottom: 40px; font-style: italic; }
+        h2 { font-size: 1.4rem; font-weight: bold; margin-top: 35px; margin-bottom: 15px; font-family: 'Helvetica Neue', Arial, sans-serif; border-left: 4px solid #1a1a1a; padding-left: 15px; }
+        p { margin-bottom: 20px; text-align: justify; }
+        strong { color: #000; }
+        
+        /* CTA Premium */
+        .cta-container { margin: 50px 0; padding: 30px; background-color: #f9f9f9; border-radius: 4px; border: 1px solid #eee; text-align: center; }
+        .cta-container p { text-align: center; margin-bottom: 20px; font-size: 1.1rem; }
+        .btn-linkedin { display: inline-block; padding: 12px 30px; background-color: #0077b5; color: #fff !important; text-decoration: none !important; font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: bold; border-radius: 4px; font-size: 1rem; letter-spacing: 1px; transition: background-color 0.3s; border: none !important; }
+        .btn-linkedin:hover { background-color: #005582; }
 
-        main { 
-            flex: 1; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            padding: 80px 20px; 
-        }
+        .content-box a { color: #000; text-decoration: none; font-weight: bold; border-bottom: 1px solid #ddd; transition: border-color 0.3s; }
+        .content-box a:hover { border-bottom: 1px solid #1a1a1a; }
 
-        .content-box { 
-            max-width: 700px; 
-            text-align: center; 
-            font-size: 1.2rem; 
-        }
-
-        h1 { 
-            font-size: 1.5rem;
-            font-weight: bold; 
-            margin-bottom: 24px; 
-            text-transform: uppercase; 
-            letter-spacing: 2px;
-        }
-
-        p { margin-bottom: 18px; }
-
-        .content-box a { 
-            color: #000; 
-            text-decoration: none; 
-            font-weight: bold; 
-            border-bottom: 1px solid #ddd; 
-            transition: border-color 0.3s;
-        }
-
-        .content-box a:hover { 
-            border-bottom: 1px solid #000; 
-        }
-
-        /* --- NUEVA PROPUESTA: FOOTER UNIFICADO DE 3 COLUMNAS --- */
-        footer {
-            padding: 60px 20px 40px 20px;
-            background-color: #ffffff;
-            border-top: 1px solid #f2f2f2;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 0.9rem;
-            line-height: 1.6;
-        }
-        .footer-grid {
-            max-width: 900px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            gap: 50px;
-            text-align: left;
-        }
-        @media (max-width: 768px) {
-            .footer-grid { grid-template-columns: 1fr; gap: 35px; text-align: center; }
-        }
-        .footer-col h3 {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #888;
-            margin-top: 0;
-            margin-bottom: 20px;
-        }
+        /* FOOTER UNIFICADO */
+        footer { padding: 60px 20px 40px 20px; background-color: #ffffff; border-top: 1px solid #f2f2f2; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.9rem; line-height: 1.6; }
+        .footer-grid { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 50px; text-align: left; }
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 35px; text-align: center; } }
+        .footer-col h3 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-top: 0; margin-bottom: 20px; }
         .footer-col p { color: #555; margin: 0; font-size: 0.9rem; }
         .footer-col ul { list-style: none; padding: 0; margin: 0; }
         .footer-col ul li { margin-bottom: 12px; }
         .footer-col ul li a { color: #1a1a1a; text-decoration: none; font-weight: 600; border-bottom: 1px solid #eee; transition: all 0.3s; }
         .footer-col ul li a:hover { border-bottom: 1px solid #1a1a1a; }
-        
         .footer-socials { display: flex; gap: 15px; margin-top: 20px; }
         @media (max-width: 768px) { .footer-socials { justify-content: center; } }
-        .footer-socials a { color: #666; text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: color 0.3s; }
+        .footer-socials a { color: #666; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
         .footer-socials a:hover { color: #000; }
-        
-        .footer-bottom {
-            max-width: 900px;
-            margin: 50px auto 0 auto;
-            padding-top: 20px;
-            border-top: 1px solid #f9f9f9;
-            text-align: center;
-            font-size: 0.8rem;
-            color: #999;
-        }
+        .footer-bottom { max-width: 900px; margin: 50px auto 0 auto; padding-top: 20px; border-top: 1px solid #f9f9f9; text-align: center; font-size: 0.8rem; color: #999; }
     </style>
 </head>
-
 <body>
 
 <main>
     <div class="content-box">
         <h1>Inteligencia</h1>
-        <p>Durante mucho tiempo, la inteligencia se ha entendido como un atributo individual: la capacidad de una persona para analizar, memorizar o resolver problemas por sí sola. Esa definición funciona en el entorno académico, pero colapsa dentro de una organización, donde los resultados dependen de la interacción.</p>
-        <p>Una empresa no falla por falta de talento individual. Falla cuando ese talento no logra coordinarse, cuando las decisiones se estancan y la información no se convierte en ejecución. En los negocios, la inteligencia no es lo que alguien sabe, sino lo que un grupo es capaz de hacer con lo que sabe.</p>
-        <p>Cuando esa capacidad colectiva se degrada, el sistema entra en fricción. Los síntomas son predecibles y escalan a través de tres dimensiones críticas: el diagnóstico general de una <a href="/empresa-en-crisis/">empresa en crisis</a>, el vacío provocado por la <a href="/falta-de-liderazgo/">falta de liderazgo</a> y la pérdida de eficiencia en los <a href="/problemas-operativos/">problemas operativos</a> cotidianos.</p>
-        <p>Desarrollar inteligencia organizacional no significa acumular más datos, sino ordenar la forma en la que el sistema observa, decide y actúa. Es un proceso de reingeniería de flujos que requiere claridad, velocidad y, en escenarios críticos, una <a href="https://liderazgointerino.com">intervención directa transicional</a>.</p>
+        <div class="subtitle">El rendimiento de un sistema complejo no se mide por sus partes, sino por sus conexiones.</div>
+
+        <p>Durante décadas, el entorno corporativo ha cometido el error de diagnosticar la <strong>inteligencia de una organización</strong> bajo una métrica puramente individual: acumulando currículums brillantes, certificaciones y talento aislado. Sin embargo, en la práctica de la alta dirección, el talento individual no garantiza el éxito operativo. Un sistema compuesto exclusivamente por mentes brillantes puede paralizarse si los canales de comunicación y los flujos de decisión están obstruidos.</p>
+        
+        <p>La verdadera inteligencia organizacional es de naturaleza colectiva. Se define como la capacidad crítica de un sistema para digerir información del entorno, procesarla sin sesgos políticos internos y transformarla en ejecución inmediata. Una empresa no colapsa por no saber qué hacer; colapsa cuando el conocimiento de la primera línea operativa tarda semanas en subir a la mesa directiva, o cuando las directrices corporativas se diluyen en un mar de burocracia antes de tocar el terreno.</p>
+
+        <h2>El Reto de la Complejidad Regional en América Latina</h2>
+        <p>Este desafío sistémico se duplica cuando las multinacionales intentan operar filiales en <strong>América Latina</strong>. La distancia geográfica, las asimetrías regulatorias y las marcadas diferencias en las culturas laborales de la región generan una fricción constante. La sede global asume que lo que funciona en su mercado matriz se replicará de manera idéntica en México, Brasil o Colombia; el resultado suele ser una desconexión crítica entre la estrategia macro y la realidad micro del mercado local.</p>
+
+        <p>Cuando la coordinación central se quiebra, la inteligencia se degrada y el sistema entra en un estado latente de vulnerabilidad que se manifiesta con fuerza a través de tres dimensiones operativas: el diagnóstico de una <a href="/empresa-en-crisis/">empresa en crisis</a> abierta, la parálisis política derivada de la <a href="/falta-de-liderazgo/">falta de liderazgo</a> local y el goteo constante de pérdidas financieras por <a href="/problemas-operativos/">problemas operativos</a> crónicos.</p>
+
+        <p>Corregir este rumbo no requiere más juntas de planeación ni reportes interminables. Requiere un rediseño del flujo de decisiones. En entornos de alta complejidad transnacional, la intervención de una <a href="https://liderazgointerino.com">dirección regional interina</a> rompe los silos de inmediato, devolviendo al sistema su agilidad táctica y su capacidad de responder con contundencia frente a los cambios del mercado.</p>
+
+        <!-- CALL TO ACTION LINKEDIN -->
+        <div class="cta-container">
+            <p><strong>¿Tus operaciones en Latinoamérica están perdiendo tracción o alineación corporativa?</strong><br>Conectemos directamente en LinkedIn para evaluar los puntos de fricción de tu estructura regional y diseñar un plan de estabilización inmediata.</p>
+            <a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank" class="btn-linkedin">Conectar en LinkedIn</a>
+        </div>
     </div>
 </main>
 
 <footer>
     <div class="footer-grid">
-        <!-- Columna 1: El Autor -->
         <div class="footer-col">
             <h3>Sergio Lubezky A.</h3>
             <p>Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. Exploro cómo los sistemas complejos, los equipos de trabajo y las ideas colectivas se coordinan para transformar crisis operativas en ventajas estratégicas resilientes.</p>
@@ -152,7 +84,6 @@
                 <a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a>
             </div>
         </div>
-        <!-- Columna 2: Navegación de Inteligencia.com -->
         <div class="footer-col">
             <h3>Contenido</h3>
             <ul>
@@ -161,7 +92,6 @@
                 <li><a href="/problemas-operativos/">Problemas Operativos</a></li>
             </ul>
         </div>
-        <!-- Columna 3: El Universo Cruzado -->
         <div class="footer-col">
             <h3>Ecosistema</h3>
             <ul>
