@@ -25,44 +25,8 @@
     <meta name="twitter:description" content="La inteligencia organizacional no es talento individual, es capacidad de coordinación y ejecución colectiva." />
     <meta name="twitter:image" content="https://lubezky.com/foto-sergio.jpg" />
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Person",
-          "@id": "https://lubezky.com/#sergio",
-          "name": "Sergio Lubezky",
-          "url": "https://lubezky.com/",
-          "sameAs": [
-            "https://lubezky.com/",
-            "https://elmismobarco.com/",
-            "https://inteligencia.com/",
-            "https://unnuevopuntodevista.com/",
-            "https://liderazgointerino.com/",
-            "https://coachdefoto.com/",
-            "https://musica.sergiolubezky.com/",
-            "https://www.linkedin.com/in/sergiolubezky/",
-            "https://x.com/slubezky",
-            "https://www.facebook.com/sergiolubezky/",
-            "https://www.instagram.com/sergiolubezky/"
-          ]
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://inteligencia.com/#website",
-          "url": "https://inteligencia.com/",
-          "name": "Inteligencia",
-          "description": "Exploración sobre la inteligencia colectiva y la coordinación organizacional.",
-          "publisher": { "@id": "https://lubezky.com/#sergio" },
-          "accountablePerson": { "@id": "https://lubezky.com/#sergio" },
-          "about": { "@id": "https://lubezky.com/#sergio" }
-        }
-      ]
-    }
-    </script>
-
     <style>
+        /* --- ESTÉTICA MASTER LUBEZKY --- */
         body { 
             margin: 0; 
             display: flex; 
@@ -80,7 +44,7 @@
             display: flex; 
             align-items: center; 
             justify-content: center; 
-            padding: 60px 20px; 
+            padding: 80px 20px; 
         }
 
         .content-box { 
@@ -92,12 +56,12 @@
         h1 { 
             font-size: 1.5rem;
             font-weight: bold; 
-            margin-bottom: 16px; 
+            margin-bottom: 24px; 
             text-transform: uppercase; 
             letter-spacing: 2px;
         }
 
-        p { margin-bottom: 14px; }
+        p { margin-bottom: 18px; }
 
         .content-box a { 
             color: #000; 
@@ -111,82 +75,53 @@
             border-bottom: 1px solid #000; 
         }
 
-        /* FOOTER STANDARDIZADO */
-        footer { 
-            padding: 60px 20px; 
-            text-align: center; 
-            font-family: 'Helvetica Neue', Arial, sans-serif; 
+        /* --- NUEVA PROPUESTA: FOOTER UNIFICADO DE 3 COLUMNAS --- */
+        footer {
+            padding: 60px 20px 40px 20px;
+            background-color: #ffffff;
             border-top: 1px solid #f2f2f2;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.9rem;
+            line-height: 1.6;
         }
-
-        .profile-img { 
-            width: 75px; 
-            height: 75px; 
-            border-radius: 50%; 
-            margin-bottom: 10px; 
-            object-fit: cover; 
-            border: 1px solid #eee; 
+        .footer-grid {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 50px;
+            text-align: left;
         }
-
-        .name-link { 
-            text-decoration: none; 
-            color: inherit; 
-            display: block; 
-            margin-bottom: 2px; 
+        @media (max-width: 768px) {
+            .footer-grid { grid-template-columns: 1fr; gap: 35px; text-align: center; }
         }
-
-        .name { 
-            font-weight: 600; 
-            font-size: 1rem; 
-            letter-spacing: 1.5px; 
-            text-transform: uppercase; 
+        .footer-col h3 {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #888;
+            margin-top: 0;
+            margin-bottom: 20px;
         }
-
-        .footer-bio {
-            max-width: 650px;
-            margin: 0 auto 30px auto; 
-            font-size: 0.95rem;
-            color: #444;
-            line-height: 1.7;
-        }
-
-        .footer-bio p { margin: 0; }
-
-        .footer-bio a {
-            color: #1a1a1a;
-            text-decoration: none;
-            font-weight: 600;
-            border-bottom: 1px solid #eee;
-        }
-
-        .footer-bio a:hover {
-            border-bottom: 1px solid #1a1a1a;
-        }
-
-        .social-nav { 
-            list-style: none; 
-            padding: 0; 
-            margin: 0; 
-            display: flex; 
-            flex-wrap: wrap; 
-            justify-content: center; 
-            gap: 12px; 
-            font-size: 0.85rem; 
-        }
-
-        .social-nav a { 
-            color: #666; 
-            text-decoration: none; 
-        }
-
-        .social-nav a:hover { 
-            color: #000; 
-        }
+        .footer-col p { color: #555; margin: 0; font-size: 0.9rem; }
+        .footer-col ul { list-style: none; padding: 0; margin: 0; }
+        .footer-col ul li { margin-bottom: 12px; }
+        .footer-col ul li a { color: #1a1a1a; text-decoration: none; font-weight: 600; border-bottom: 1px solid #eee; transition: all 0.3s; }
+        .footer-col ul li a:hover { border-bottom: 1px solid #1a1a1a; }
         
-        .social-nav li:not(:last-child)::after { 
-            content: "-"; 
-            margin-left: 12px; 
-            color: #ccc; 
+        .footer-socials { display: flex; gap: 15px; margin-top: 20px; }
+        @media (max-width: 768px) { .footer-socials { justify-content: center; } }
+        .footer-socials a { color: #666; text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: color 0.3s; }
+        .footer-socials a:hover { color: #000; }
+        
+        .footer-bottom {
+            max-width: 900px;
+            margin: 50px auto 0 auto;
+            padding-top: 20px;
+            border-top: 1px solid #f9f9f9;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #999;
         }
     </style>
 </head>
@@ -196,57 +131,50 @@
 <main>
     <div class="content-box">
         <h1>Inteligencia</h1>
-
-        <p>
-            Durante mucho tiempo, la inteligencia se ha entendido como algo individual: la capacidad de una persona para analizar, memorizar o resolver problemas por sí sola. Esa definición funciona en lo académico, pero se queda corta dentro de una organización, donde los resultados no dependen de una persona, sino de cómo interactúan varias.
-        </p>
-
-        <p>
-            Una empresa no falla por falta de talento individual. Falla cuando ese talento no logra coordinarse, cuando las decisiones no se alinean y cuando la información no se convierte en acción. En ese contexto, la inteligencia deja de ser lo que alguien sabe y se convierte en lo que un grupo es capaz de hacer con lo que sabe.
-        </p>
-
-        <p>
-            Esto se refleja en cosas muy concretas: cómo se toman decisiones, qué tan claro es el rumbo y qué tan consistentemente se ejecuta. Cuando esa capacidad se pierde, empiezan a aparecer señales conocidas: decisiones que se retrasan, prioridades que cambian constantemente y equipos que trabajan sin una dirección clara. No es un problema de capacidad, es un problema de coordinación.
-        </p>
-
-        <p>
-            Por eso, desarrollar inteligencia en una organización no significa agregar más información, sino ordenar la forma en la que se observa, se decide y se actúa. Es un proceso que requiere claridad, estructura y, en muchos casos, <a href="https://liderazgointerino.com">intervención directa</a> para restablecer esa capacidad.
-        </p>
-
-        <p>
-            Ahí es donde la inteligencia deja de ser un concept o y se convierte en acción.
-        </p>
+        <p>Durante mucho tiempo, la inteligencia se ha entendido como un atributo individual: la capacidad de una persona para analizar, memorizar o resolver problemas por sí sola. Esa definición funciona en el entorno académico, pero colapsa dentro de una organización, donde los resultados dependen de la interacción.</p>
+        <p>Una empresa no falla por falta de talento individual. Falla cuando ese talento no logra coordinarse, cuando las decisiones se estancan y la información no se convierte en ejecución. En los negocios, la inteligencia no es lo que alguien sabe, sino lo que un grupo es capaz de hacer con lo que sabe.</p>
+        <p>Cuando esa capacidad colectiva se degrada, el sistema entra en fricción. Los síntomas son predecibles y escalan a través de tres dimensiones críticas: el diagnóstico general de una <a href="/empresa-en-crisis/">empresa en crisis</a>, el vacío provocado por la <a href="/falta-de-liderazgo/">falta de liderazgo</a> y la pérdida de eficiencia en los <a href="/problemas-operativos/">problemas operativos</a> cotidianos.</p>
+        <p>Desarrollar inteligencia organizacional no significa acumular más datos, sino ordenar la forma en la que el sistema observa, decide y actúa. Es un proceso de reingeniería de flujos que requiere claridad, velocidad y, en escenarios críticos, una <a href="https://liderazgointerino.com">intervención directa transicional</a>.</p>
     </div>
 </main>
 
 <footer>
-    <img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
-    
-    <a href="https://lubezky.com" class="name-link">
-        <span class="name">Sergio Lubezky A.</span>
-    </a>
-
-    <div class="footer-bio">
-        <p>
-            Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
-            Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a> aplicada, 
-            la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a>, 
-            la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a> 
-            y la música como otra forma de <a href="https://musica.sergiolubezky.com" target="_blank">comunicar</a>, 
-            bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com" target="_blank">un nuevo punto de vista</a> 
-            para entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.
-        </p>
+    <div class="footer-grid">
+        <!-- Columna 1: El Autor -->
+        <div class="footer-col">
+            <h3>Sergio Lubezky A.</h3>
+            <p>Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. Exploro cómo los sistemas complejos, los equipos de trabajo y las ideas colectivas se coordinan para transformar crisis operativas en ventajas estratégicas resilientes.</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a>
+                <a href="https://x.com/slubezky" target="_blank">X</a>
+                <a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a>
+            </div>
+        </div>
+        <!-- Columna 2: Navegación de Inteligencia.com -->
+        <div class="footer-col">
+            <h3>Contenido</h3>
+            <ul>
+                <li><a href="/empresa-en-crisis/">Empresa en Crisis</a></li>
+                <li><a href="/falta-de-liderazgo/">Falta de Liderazgo</a></li>
+                <li><a href="/problemas-operativos/">Problemas Operativos</a></li>
+            </ul>
+        </div>
+        <!-- Columna 3: El Universo Cruzado -->
+        <div class="footer-col">
+            <h3>Ecosistema</h3>
+            <ul>
+                <li><a href="https://lubezky.com">Lubezky.com</a></li>
+                <li><a href="https://liderazgointerino.com">Liderazgo Interino</a></li>
+                <li><a href="https://coachdefoto.com">Coach de Foto</a></li>
+                <li><a href="https://elmismobarco.com">El Mismo Barco</a></li>
+                <li><a href="https://unnuevopuntodevista.com">Un Nuevo Punto de Vista</a></li>
+                <li><a href="https://musica.sergiolubezky.com">Música</a></li>
+            </ul>
+        </div>
     </div>
-    
-    <ul class="social-nav">
-        <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://x.com/slubezky" target="_blank">X</a></li>
-        <li><a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a></li>
-        <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
-        <li><a href="http://googleusercontent.com/spotify.com/5" target="_blank">Podcast</a></li>
-        <li><a href="https://musica.sergiolubezky.com" target="_blank">Música</a></li>
-        <li><a href="https://coachdefoto.com" target="_blank">Fotografía</a></li>
-    </ul>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Sergio Lubezky A. Todos los derechos reservados.</p>
+    </div>
 </footer>
 
 </body>
