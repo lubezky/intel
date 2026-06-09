@@ -3,46 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresa en Crisis | Problemas Operativos y pérdida de eficiencia</title>
+    <title>Problemas Operativos | Eficiencia y cuellos de botella organizacionales</title>
+    <meta name="description" content="Análisis sobre la crisis operativa en las empresas. Qué hacer cuando los flujos fallan, se pierde eficiencia y la ejecución se burocratiza.">
+    <meta name="author" content="Sergio Lubezky">
 
-<link rel="canonical" href="https://inteligencia.com/problemas-operativos/" />
+    <link rel="canonical" href="https://inteligencia.com/problemas-operativos/" />
     
-    <meta name="description" content="Análisis sobre la crisis operativa en las organizaciones. Qué hacer cuando los procesos fallan, los resultados caen y la ejecución pierde consistencia.">
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Problemas Operativos | Eficiencia y cuellos de botella organizacionales" />
+    <meta property="og:description" content="Un problema operativo no es un hecho aislado, es un fallo de diseño en la arquitectura de tus procesos." />
+    <meta property="og:url" content="https://inteligencia.com/problemas-operativos/" />
+    <meta property="og:site_name" content="Inteligencia" />
+    <meta property="og:image" content="https://lubezky.com/foto-sergio.jpg" />
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Person",
-          "@id": "https://lubezky.com/#sergio",
-          "name": "Sergio Lubezky",
-          "url": "https://lubezky.com/",
-          "sameAs": [
-            "https://www.linkedin.com/in/sergiolubezky/",
-            "https://x.com/slubezky",
-            "https://inteligencia.com/",
-            "https://liderazgointerino.com/",
-            "https://coachdefoto.com/",
-            "https://elmismobarco.com/",
-            "https://unnuevopuntodevista.com/"
-          ],
-          "knowsAbout": ["Operational Efficiency", "Crisis Management", "Business Strategy", "Process Optimization"]
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://inteligencia.com/empresa-en-crisis/problemas-operativos/#webpage",
-          "url": "https://inteligencia.com/empresa-en-crisis/problemas-operativos/",
-          "name": "Empresa en Crisis: Problemas Operativos",
-          "isPartOf": { "@id": "https://inteligencia.com/#website" },
-          "mainEntity": { "@id": "https://lubezky.com/#sergio" },
-          "description": "Qué hacer cuando la operación de una empresa deja de responder y los síntomas de crisis operativa se acumulan."
-        }
-      ]
-    }
-    </script>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@slubezky" />
+    <meta name="twitter:creator" content="@slubezky" />
+    <meta name="twitter:title" content="Problemas Operativos | Eficiencia y cuellos de botella organizacionales" />
+    <meta name="twitter:description" content="Un problema operativo no es un hecho aislado, es un fallo de diseño en la arquitectura de tus procesos." />
+    <meta name="twitter:image" content="https://lubezky.com/foto-sergio.jpg" />
 
     <style>
+        /* --- ESTÉTICA MASTER LUBEZKY --- */
         body { 
             margin: 0; 
             display: flex; 
@@ -52,103 +35,92 @@
             color: #1a1a1a; 
             font-family: 'Georgia', serif; 
             line-height: 1.8; 
+            -webkit-font-smoothing: antialiased;
         }
+
         main { 
             flex: 1; 
             display: flex; 
             align-items: center; 
             justify-content: center; 
-            padding: 60px 20px; 
+            padding: 80px 20px; 
         }
+
         .content-box { 
             max-width: 700px; 
             text-align: center; 
             font-size: 1.2rem; 
         }
+
         h1 { 
             font-size: 1.5rem;
             font-weight: bold; 
-            margin-bottom: 16px; 
+            margin-bottom: 24px; 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
         }
-        p { margin-bottom: 12px; }
+
+        p { margin-bottom: 18px; }
 
         .content-box a { 
             color: #000; 
             text-decoration: none; 
             font-weight: bold; 
             border-bottom: 1px solid #ddd; 
+            transition: border-color 0.3s;
         }
+
         .content-box a:hover { 
             border-bottom: 1px solid #000; 
         }
 
-        /* --- Estilos de Footer Unificado (Micro-ajuste Sergio) --- */
-        footer { 
-            padding: 60px 20px; 
-            text-align: center; 
-            font-family: 'Helvetica Neue', Arial, sans-serif; 
+        /* --- FOOTER UNIFICADO DE 3 COLUMNAS --- */
+        footer {
+            padding: 60px 20px 40px 20px;
+            background-color: #ffffff;
+            border-top: 1px solid #f2f2f2;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.9rem;
+            line-height: 1.6;
         }
-        .profile-img { 
-            width: 75px; 
-            height: 75px; 
-            border-radius: 50%; 
-            margin-bottom: 10px; 
-            object-fit: cover; 
-            border: 1px solid #eee; 
+        .footer-grid {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 50px;
+            text-align: left;
         }
-        .name-link { 
-            text-decoration: none; 
-            color: inherit; 
-            display: block; 
-            margin-bottom: 2px; 
+        @media (max-width: 768px) {
+            .footer-grid { grid-template-columns: 1fr; gap: 35px; text-align: center; }
         }
-        .name { 
-            font-weight: 600; 
-            font-size: 1rem; 
-            letter-spacing: 1.5px; 
-            text-transform: uppercase; 
+        .footer-col h3 {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #888;
+            margin-top: 0;
+            margin-bottom: 20px;
         }
-        .footer-bio {
-            max-width: 650px;
-            margin: 0 auto 30px auto; 
-            font-size: 0.95rem;
-            color: #444;
-            line-height: 1.7;
-        }
-        .footer-bio p { margin: 0; }
-        .footer-bio a {
-            color: #1a1a1a;
-            text-decoration: none;
-            font-weight: 600;
-            border-bottom: 1px solid #eee;
-            transition: all 0.3s ease;
-        }
-        .footer-bio a:hover {
-            border-bottom: 1px solid #1a1a1a;
-            background-color: #f9f9f9;
-            color: #000;
-        }
-        .social-nav { 
-            list-style: none; 
-            padding: 0; 
-            margin: 0; 
-            display: flex; 
-            flex-wrap: wrap; 
-            justify-content: center; 
-            gap: 12px; 
-            font-size: 0.85rem; 
-        }
-        .social-nav a { 
-            color: #666; 
-            text-decoration: none; 
-        }
-        .social-nav a:hover { 
-            color: #000; 
-        }
-        .social-nav li:not(:last-child)::after { 
-            content: "-"; 
-            margin-left: 12px; 
-            color: #ccc; 
+        .footer-col p { color: #555; margin: 0; font-size: 0.9rem; }
+        .footer-col ul { list-style: none; padding: 0; margin: 0; }
+        .footer-col ul li { margin-bottom: 12px; }
+        .footer-col ul li a { color: #1a1a1a; text-decoration: none; font-weight: 600; border-bottom: 1px solid #eee; transition: all 0.3s; }
+        .footer-col ul li a:hover { border-bottom: 1px solid #1a1a1a; }
+        
+        .footer-socials { display: flex; gap: 15px; margin-top: 20px; }
+        @media (max-width: 768px) { .footer-socials { justify-content: center; } }
+        .footer-socials a { color: #666; text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: color 0.3s; }
+        .footer-socials a:hover { color: #000; }
+        
+        .footer-bottom {
+            max-width: 900px;
+            margin: 50px auto 0 auto;
+            padding-top: 20px;
+            border-top: 1px solid #f9f9f9;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #999;
         }
     </style>
 </head>
@@ -157,71 +129,52 @@
 
 <main>
     <div class="content-box">
-        <h1>Empresa en Crisis: Problemas Operativos</h1>
-
-        <p>
-            No siempre es evidente cuándo una empresa entra en crisis. 
-            A veces comienza con pequeños desajustes: procesos que se ralentizan, decisiones que no se ejecutan y resultados que dejan de ser consistentes.
-        </p>
-
-        <p>
-            Con el tiempo, esos síntomas operativos se acumulan. 
-            La ejecución pierde claridad, el equipo se descoordina y la organización deja de responder a las demandas del mercado como antes.
-        </p>
-
-        <p>
-            En ese punto, lo más común es intentar entender qué está fallando en la cadena. 
-            Pero cuando la inercia operativa avanza, el análisis ya no es suficiente.
-        </p>
-
-        <p><strong>La crisis operativa exige intervención.</strong></p>
-
-        <p>
-            Se requieren acciones que reordenen el sistema, recuperen la eficiencia y permitan que la estructura vuelva a ser funcional. 
-            No basta con detectar el problema; hay que ejecutar la solución.
-        </p>
-
-        <p>
-            Cuando una empresa pierde su capacidad de ejecución, lo que está en riesgo es la viabilidad misma de la operación a largo plazo.
-        </p>
-
-        <p>
-            En esos momentos, es necesario intervenir directamente en los procesos de decisión y control. 
-            Ahí es donde el <a href="https://liderazgointerino.com">liderazgo interino</a> especializado en eficiencia toma sentido.
-        </p>
-
-        <p>
-            Si tu operación está perdiendo coherencia o los resultados indican un deterioro sistémico, es vital actuar antes de que el daño sea estructural.
-        </p>
+        <h1>Problemas Operativos</h1>
+        <p>Un problema operativo no es un evento aislado; es la manifestación visible de un fallo en el diseño del flujo de trabajo. Cuando los procesos se ralentizan, los retrabajos se multiplican y la ejecución pierde consistencia, la empresa está quemando margen de utilidad y destruyendo la confianza del cliente en tiempo real.</p>
+        <p>La burocracia interna suele crecer como una respuesta incorrecta a errores del pasado, creando capas de control que solo añaden fricción. Una operación inteligente es aquella que mantiene la menor cantidad de pasos posibles entre la toma de una decisión y su ejecución en el campo.</p>
+        <p>Corregir una crisis operativa no consiste en trabajar más horas, sino en simplificar la arquitectura de los procesos. Cuando la línea de operación está colapsada, se necesita un enfoque de gestión de crisis capaz de limpiar los cuellos de botella y reordenar la ejecución a través de un <a href="https://liderazgointerino.com">mando transicional eficiente</a>.</p>
     </div>
 </main>
 
 <footer>
-    <img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
-    
-    <a href="https://lubezky.com" class="name-link">
-        <span class="name">Sergio Lubezky A.</span>
-    </a>
-
-    <div class="footer-bio">
-        <p>
-            Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
-            Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a> aplicada, 
-            la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a> en crisis 
-            y la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a>. 
-            Todo bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com" target="_blank">un nuevo punto de vista</a> 
-            para entender que todos estamos en <a href="https://elmismobarco.com" target="_blank">el mismo barco</a>.
-        </p>
+    <div class="footer-grid">
+        <!-- Columna 1: El Autor -->
+        <div class="footer-col">
+            <h3>Sergio Lubezky A.</h3>
+            <p>Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. Exploro cómo los sistemas complejos, los equipos de trabajo y las ideas colectivas se coordinan para transformar crisis operativas en ventajas estratégicas resilientes.</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a>
+                <a href="https://x.com/slubezky" target="_blank">X</a>
+                <a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a>
+                <a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a>
+            </div>
+        </div>
+        <!-- Columna 2: Navegación de Inteligencia.com -->
+        <div class="footer-col">
+            <h3>Contenido</h3>
+            <ul>
+                <li><a href="/empresa-en-crisis/">Empresa en Crisis</a></li>
+                <li><a href="/falta-de-liderazgo/">Falta de Liderazgo</a></li>
+                <li><a href="/problemas-operativos/">Problemas Operativos</a></li>
+            </ul>
+        </div>
+        <!-- Columna 3: El Universo Cruzado -->
+        <div class="footer-col">
+            <h3>Ecosistema</h3>
+            <ul>
+                <li><a href="https://lubezky.com">Lubezky.com</a></li>
+                <li><a href="https://liderazgointerino.com">Liderazgo Interino</a></li>
+                <li><a href="https://coachdefoto.com">Coach de Foto</a></li>
+                <li><a href="https://elmismobarco.com">El Mismo Barco</a></li>
+                <li><a href="https://unnuevopuntodevista.com">Un Nuevo Punto de Vista</a></li>
+                <li><a href="https://musica.sergiolubezky.com">Música</a></li>
+            </ul>
+        </div>
     </div>
-    
-    <ul class="social-nav">
-        <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://x.com/slubezky" target="_blank">X</a></li>
-        <li><a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a></li>
-        <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
-        <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a></li>
-        <li><a href="https://coachdefoto.com" target="_blank">Fotografía</a></li>
-    </ul>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Sergio Lubezky A. Todos los derechos reservados.</p>
+    </div>
 </footer>
 
 </body>
