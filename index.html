@@ -72,7 +72,8 @@
 
         /* Navegación */
         header { background-color: var(--azul-noche); color: var(--blanco); padding: 1.5rem 0; position: fixed; width: 100%; top: 0; z-index: 100; border-bottom: 1px solid rgba(255,255,255,0.1); }
-        .nav-container { display: flex; justify-content: space-between; align-items: center; }
+        /* AQUÍ ESTÁ EL AJUSTE MILIMÉTRICO: align-items: baseline */
+        .nav-container { display: flex; justify-content: space-between; align-items: baseline; }
         .logo { font-size: 1.8rem; font-weight: 700; letter-spacing: -0.5px; }
         .nav-links a { margin-left: 2rem; font-size: 0.9rem; font-weight: 300; }
         .nav-links a:hover { color: var(--oro-sutil); }
@@ -117,7 +118,7 @@
             .grid-3 { grid-template-columns: 1fr; }
             .case-study { grid-template-columns: 1fr; gap: 1rem; }
             .hero h1 { font-size: 2.8rem; }
-            .nav-links { display: none; /* Simplificado para móvil */ }
+            .nav-links { display: none; }
         }
     </style>
 </head>
@@ -236,7 +237,7 @@
         <div class="container">
             <h2>Liderazgo Estratégico</h2>
             <p>La firma está dirigida por <strong>Sergio Lubezky</strong>, especialista en diagnóstico operativo con experiencia directa en la detección de fricciones sistémicas. Entendemos que la verdadera auditoría no se hace desde una hoja de cálculo, sino infiltrándose en la línea frontal de su negocio.</p>
-            <a href="https://linkedin.com/in/sergiolubezky/" target="_blank" class="btn-primary" style="background-color: var(--blanco); color: var(--azul-noche);">Ver perfil en LinkedIn</a>
+            <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="btn-primary" style="background-color: var(--blanco); color: var(--azul-noche);">Ver perfil en LinkedIn</a>
         </div>
     </section>
 
