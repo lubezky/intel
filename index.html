@@ -3,101 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inteligencia Organizacional | Coordinación y Dirección Regional en LATAM</title>
-    <meta name="description" content="La inteligencia de una empresa no es el talento de sus individuos, sino su capacidad de coordinación colectiva y ejecución en mercados complejos como Latinoamérica.">
-    <meta name="author" content="Sergio Lubezky">
-    <link rel="canonical" href="https://inteligencia.com/">
-
-    <!-- Marcado Estructurado JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "@id": "https://inteligencia.com/#website",
-          "url": "https://inteligencia.com/",
-          "name": "Inteligencia",
-          "description": "La inteligencia de una empresa no es el talento de sus individuos, sino su capacidad de coordinación colectiva y ejecución en mercados complejos como Latinoamérica.",
-          "inLanguage": "es",
-          "publisher": {
-            "@type": "Person",
-            "@id": "https://lubezky.com/#person",
-            "name": "Sergio Lubezky",
-            "url": "https://lubezky.com/"
-          }
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://inteligencia.com/#webpage",
-          "url": "https://inteligencia.com/",
-          "name": "Inteligencia Organizacional | Coordinación y Dirección Regional en LATAM",
-          "description": "La inteligencia de una empresa no es el talento de sus individuos, sino su capacidad de coordinación colectiva y ejecución en mercados complejos como Latinoamérica.",
-          "inLanguage": "es",
-          "isPartOf": {
-            "@id": "https://inteligencia.com/#website"
-          },
-          "author": {
-            "@type": "Person",
-            "@id": "https://lubezky.com/#person"
-          },
-          "about": {
-            "@type": "Person",
-            "@id": "https://lubezky.com/#person"
-          }
-        }
-      ]
-    }
-    </script>
+    <title>inteligencia.com | Firma de Auditoría Operativa</title>
+    <meta name="description" content="Detectamos las fallas sistémicas que sus métricas internas no registran. Auditoría operativa y experiencia real.">
     
+    <!-- Fuentes corporativas (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
     <style>
-        body { margin: 0; display: flex; flex-direction: column; min-height: 100vh; background-color: #fff; color: #1a1a1a; font-family: 'Georgia', serif; line-height: 1.8; -webkit-font-smoothing: antialiased; }
-        main { flex: 1; display: flex; align-items: center; justify-content: center; padding: 80px 20px 60px 20px; }
-        .content-box { max-width: 750px; text-align: left; font-size: 1.15rem; }
-        h1 { font-size: 2rem; font-weight: bold; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; text-align: center; font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.3; }
-        .subtitle { font-size: 1.1rem; color: #666; text-align: center; margin-bottom: 40px; font-style: italic; }
-        h2 { font-size: 1.4rem; font-weight: bold; margin-top: 35px; margin-bottom: 15px; font-family: 'Helvetica Neue', Arial, sans-serif; border-left: 4px solid #1a1a1a; padding-left: 15px; }
-        p { margin-bottom: 20px; text-align: justify; }
-        em { font-style: italic; }
+        /* Variables y Reseteo */
+        :root {
+            --azul-noche: #0a1128;
+            --azul-corp: #121e3d;
+            --blanco: #ffffff;
+            --gris-claro: #f4f4f4;
+            --texto-oscuro: #222222;
+            --texto-gris: #555555;
+            --oro-sutil: #c5a880; /* Tono de acento ejecutivo */
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; color: var(--texto-oscuro); background-color: var(--blanco); line-height: 1.6; }
+        h1, h2, h3, .logo { font-family: 'Playfair Display', serif; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
         
-        .cta-container { margin: 50px 0; padding: 30px; background-color: #f9f9f9; border-radius: 4px; border: 1px solid #eee; text-align: center; }
-        .cta-container p { text-align: center; margin-bottom: 20px; font-size: 1.1rem; }
-        .btn-linkedin { display: inline-block; padding: 12px 30px; background-color: #0077b5; color: #fff !important; text-decoration: none !important; font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: bold; border-radius: 4px; font-size: 1rem; letter-spacing: 1px; transition: background-color 0.3s; border: none !important; }
-        .btn-linkedin:hover { background-color: #005582; }
+        /* Contenedores y Botones */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        .btn-primary { display: inline-block; background-color: var(--oro-sutil); color: var(--azul-noche); padding: 1rem 2rem; font-weight: 600; font-size: 0.9rem; letter-spacing: 0.5px; text-transform: uppercase; border: none; cursor: pointer; }
+        .btn-primary:hover { background-color: #b0936b; }
+        .btn-secondary { display: inline-block; border: 1px solid var(--blanco); color: var(--blanco); padding: 1rem 2rem; font-weight: 600; font-size: 0.9rem; letter-spacing: 0.5px; text-transform: uppercase; margin-left: 1rem; }
+        .btn-secondary:hover { background-color: var(--blanco); color: var(--azul-noche); }
 
-        .content-box a { color: #000; text-decoration: none; font-weight: bold; border-bottom: 1px solid #ddd; transition: border-color 0.3s; }
-        .content-box a:hover { border-bottom: 1px solid #1a1a1a; }
+        /* Navegación */
+        header { background-color: var(--azul-noche); color: var(--blanco); padding: 1.5rem 0; position: fixed; width: 100%; top: 0; z-index: 100; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.8rem; font-weight: 700; letter-spacing: -0.5px; }
+        .nav-links a { margin-left: 2rem; font-size: 0.9rem; font-weight: 300; }
+        .nav-links a:hover { color: var(--oro-sutil); }
 
-        footer { padding: 60px 20px 40px 20px; background-color: #ffffff; border-top: 1px solid #f2f2f2; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.9rem; line-height: 1.6; }
-        .footer-grid { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 50px; text-align: left; }
-        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 35px; text-align: center; } }
-        .footer-col h3 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-top: 0; margin-bottom: 20px; }
-        .footer-col p { color: #555; margin: 0; font-size: 0.9rem; }
-        .footer-col ul { list-style: none; padding: 0; margin: 0; }
-        .footer-col ul li { margin-bottom: 12px; }
-        .footer-col ul li a { color: #1a1a1a; text-decoration: none; font-weight: 600; border-bottom: 1px solid #eee; transition: all 0.3s; }
-        .footer-col ul li a:hover { border-bottom: 1px solid #1a1a1a; }
-        .footer-col ul li a.current-location { color: #d32f2f !important; border-bottom: 1px solid #f9ebeb; }
-        .footer-col ul li a.current-location:hover { border-bottom: 1px solid #d32f2f; }
-        .footer-socials { display: flex; gap: 15px; margin-top: 20px; }
-        @media (max-width: 768px) { .footer-socials { justify-content: center; } }
-        .footer-socials a { color: #666; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
-        .footer-socials a:hover { color: #000; }
+        /* Hero Section */
+        .hero { background-color: var(--azul-noche); color: var(--blanco); padding: 12rem 0 8rem 0; }
+        .hero .pre-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--oro-sutil); margin-bottom: 1.5rem; display: block; }
+        .hero h1 { font-size: 4rem; line-height: 1.1; margin-bottom: 2rem; max-width: 900px; }
+        .hero p { font-size: 1.2rem; font-weight: 300; max-width: 700px; margin-bottom: 3rem; color: #d1d5db; }
         
-        .footer-bottom { max-width: 900px; margin: 25px auto 0 auto; padding-top: 20px; border-top: 1px solid #f9f9f9; text-align: center; font-size: 0.8rem; color: #999; }
-        .footer-bottom p { text-align: center; margin: 0 auto; display: block; }
+        /* Secciones Generales */
+        section { padding: 8rem 0; }
+        .section-header { text-align: center; margin-bottom: 4rem; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .section-header h2 { font-size: 2.8rem; margin-bottom: 1rem; color: var(--azul-noche); }
+        .section-header p { font-size: 1.1rem; color: var(--texto-gris); }
+
+        /* Problema (Grid) */
+        .bg-light { background-color: var(--gris-claro); }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; }
+        .card { background: var(--blanco); padding: 3rem 2rem; border-top: 4px solid var(--azul-noche); }
+        .card h3 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--azul-noche); }
+        .card p { font-size: 1rem; color: var(--texto-gris); }
+        
+        /* Casos de Estudio (Lista) */
+        .case-study { border-bottom: 1px solid #ddd; padding: 3rem 0; display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: start; }
+        .case-study:last-child { border-bottom: none; }
+        .case-title h3 { font-size: 1.8rem; color: var(--azul-noche); }
+        .case-content p strong { color: var(--azul-noche); font-family: 'Inter', sans-serif; }
+        .case-content p { margin-bottom: 1rem; color: var(--texto-gris); }
+
+        /* Liderazgo */
+        .leadership { background-color: var(--azul-noche); color: var(--blanco); }
+        .leadership h2 { color: var(--blanco); margin-bottom: 2rem; }
+        .leadership p { color: #d1d5db; max-width: 700px; font-size: 1.1rem; margin-bottom: 2rem; }
+
+        /* Footer */
+        footer { background-color: var(--azul-corp); color: var(--blanco); padding: 3rem 0; text-align: center; font-size: 0.9rem; }
+        footer p { opacity: 0.6; }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .grid-3 { grid-template-columns: 1fr; }
+            .case-study { grid-template-columns: 1fr; gap: 1rem; }
+            .hero h1 { font-size: 2.8rem; }
+            .nav-links { display: none; /* Simplificado para móvil */ }
+        }
     </style>
 </head>
 <body>
 
-<main>
-    <div class="content-box">
-        <h1>Inteligencia</h1>
-        <div class="subtitle">El rendimiento de un sistema complejo no se mide por sus partes, sino por sus conexiones.</div>
+    <!-- Navegación -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">inteligencia.com</div>
+            <nav class="nav-links">
+                <a href="#problema">La Brecha Operativa</a>
+                <a href="#practicas">Áreas de Práctica</a>
+                <a href="#casos">Evidencia de Campo</a>
+                <a href="#liderazgo">Liderazgo</a>
+            </nav>
+        </div>
+    </header>
 
-        <p>Durante décadas, el entorno corporativo ha cometido el error de diagnosticar la inteligencia de una organización bajo una métrica puramente individual: acumulando currículums brillantes, certificaciones y talento aislado. Sin embargo, en la práctica de la alta dirección, el talento individual no garantiza el éxito operativo. Un sistema compuesto exclusivamente por mentes brillantes puede paralizarse si los canales de comunicación y los flujos de decisión están obstruidos.</p>
-        
-        <p>La verdadera inteligencia organizacional es de naturaleza colectiva. Se define como la capacidad crítica de un sistema para digerir información del entorno, procesarla sin sesgos políticos internos y transformarla en ejecución inmediata. Una empresa no colapsa por no saber qué hacer; colapsa cuando el conocimiento de la primera línea operativa tarda semanas en subir a la mesa directiva, o cuando las directrices corporativas se diluyen en un mar de burocracia antes de tocar el terreno.</p>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <span class="pre-title">Firma Especializada en Auditoría de Fricción Operativa</span>
+            <h1>Detectamos las fallas sistémicas que sus métricas internas no registran.</h1>
+            <p>Los tableros de control mienten cuando la primera línea falla. Identificamos, documentamos y neutralizamos la fricción silenciosa que destruye la retención de sus clientes y ahuyenta a su talento.</p>
+            <a href="mailto:direccion@inteligencia.com" class="btn-primary">Solicitar evaluación diagnóstica</a>
+        </div>
+    </section>
 
-        <h2>El Reto de la Complejidad Regional en América Latina</h2>
-        <p>Este desafío sistémico se duplica cuando las multinacionales intentan operar filiales en América Latina. La distancia geográfica, las asimetrías regulatorias y las marcadas diferencias en las culturas laborales de la región generan una fricción constante. La sede global asume que lo que funciona en su mercado matriz se replicará de manera idéntica en México, Brasil o Colombia; el resultado suele ser una desconexión crítica entre la
+    <!-- El Problema -->
+    <section id="problema" class="bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>El riesgo de operar a ciegas</h2>
+                <p>Existe una brecha crítica entre la estrategia corporativa y la ejecución real en piso. Cuando la operación crece, la dirección general pierde visibilidad objetiva.</p>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Indicadores Filtrados<br>(Watermelon Metrics)</h3>
+                    <p>Los gerentes de sucursal protegen sus bonos. La información que llega a la alta dirección está maquillada, ocultando cuellos de botella (bottlenecks) críticos.</p>
+                </div>
+                <div class="card">
+                    <h3>Fricción Tecnológica<br>(Digital Drop-off)</h3>
+                    <p>Inversiones en canales de feedback que fallan en condiciones reales y nadie reporta. Si el canal cae, el cliente se va en silencio (Silent Churn).</p>
+                </div>
+                <div class="card">
+                    <h3>Fuga de Talento<br>(Early Attrition)</h3>
+                    <p>Procesos de integración (Onboarding) deficientes que disparan la rotación en las primeras semanas, invisibles para las auditorías tradicionales de Recursos Humanos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Áreas de Práctica -->
+    <section id="practicas">
+        <div class="container">
+            <div class="section-header">
+                <h2>Inteligencia de Campo y Mitigación de Riesgos</h2>
+                <p>No proveemos encuestas de satisfacción. Ejecutamos auditorías tácticas encubiertas con evidencia forense para la toma de decisiones directivas.</p>
+            </div>
+            <div class="grid-3">
+                <div>
+                    <h3 style="color: var(--azul-noche); margin-bottom: 1rem;">I. Auditoría CX (Customer Journey)</h3>
+                    <p style="color: var(--texto-gris);">Diagnóstico del recorrido del cliente bajo estrés operativo. Evaluamos tiempos de respuesta, saturación de roles y protocolos de desescalamiento (De-escalation protocols).</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--azul-noche); margin-bottom: 1rem;">II. Estrés Digital (Touchpoint Friction)</h3>
+                    <p style="color: var(--texto-gris);">Auditoría física y lógica de la infraestructura de retroalimentación. Detectamos QRs inactivos, flujos rotos y pérdida de datos (Dark Data).</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--azul-noche); margin-bottom: 1rem;">III. Inmersión EX (Mystery Employee)</h3>
+                    <p style="color: var(--texto-gris);">Evaluación encubierta del ciclo de vida del empleado. Nos infiltramos para auditar el cumplimiento laboral y frenar la pérdida del Costo de Adquisición de Talento (Cost per Hire).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Casos de Estudio -->
+    <section id="casos" class="bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hallazgos Reales. Impacto Financiero.</h2>
+                <p>Casos recientes documentados en empresas líderes que operaban bajo la ilusión de normalidad.</p>
+            </div>
+            <div class="case-study">
+                <div class="case-title">
+                    <h3>Cadena Restaurantera (Retail)</h3>
+                </div>
+                <div class="case-content">
+                    <p><strong>El Hallazgo:</strong> Ruptura en el protocolo de piso. La recepción absorbió tareas operativas sin capacitación. Ante la fricción, la gerencia carecía de guiones de desescalamiento.</p>
+                    <p><strong>Impacto de Negocio:</strong> Destrucción inmediata del Lifetime Value (LTV) del cliente y riesgo reputacional. Corporativo ignoraba la falta de contención en sucursales de alto tráfico.</p>
+                </div>
+            </div>
+            <div class="case-study">
+                <div class="case-title">
+                    <h3>Franquicia Nacional de Panaderías</h3>
+                </div>
+                <div class="case-content">
+                    <p><strong>El Hallazgo:</strong> Infraestructura de retroalimentación simulada. Despliegue de material POP con códigos QR para evaluación de servicio con enlaces caídos (Error 404).</p>
+                    <p><strong>Impacto de Negocio:</strong> Ceguera total de datos (Dark Data). Desperdicio de presupuesto de marketing y amplificación de la fricción para el usuario.</p>
+                </div>
+            </div>
+            <div class="case-study">
+                <div class="case-title">
+                    <h3>Centro de Contacto Multinacional</h3>
+                </div>
+                <div class="case-content">
+                    <p><strong>El Hallazgo:</strong> Falla crítica en Onboarding. Capacitación impartida con material inaccesible, equipo con riesgo sanitario e irregularidades en nómina.</p>
+                    <p><strong>Impacto de Negocio:</strong> Disparo del abandono de personal (Churn) en semana 3 y alto riesgo de incumplimiento de SLAs (Service Level Agreements) frente al cliente contratante.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Liderazgo / Perfil -->
+    <section id="liderazgo" class="leadership">
+        <div class="container">
+            <h2>Liderazgo Estratégico</h2>
+            <p>La firma está dirigida por <strong>Sergio Lubezky</strong>, especialista en diagnóstico operativo con experiencia directa en la detección de fricciones sistémicas. Entendemos que la verdadera auditoría no se hace desde una hoja de cálculo, sino infiltrándose en la línea frontal de su negocio.</p>
+            <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="btn-primary" style="background-color: var(--blanco); color: var(--azul-noche);">Ver perfil en LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2026 inteligencia.com — Business & Operational Intelligence. Ciudad de México.</p>
+            <p style="margin-top: 0.5rem; opacity: 1;">Contacto: <a href="mailto:direccion@inteligencia.com">direccion@inteligencia.com</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
