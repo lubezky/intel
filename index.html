@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+html_content = """<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -95,14 +95,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-primary: #0a1128;
-            --bg-secondary: #111b3a;
-            --bg-card: #162247;
-            --text-main: #f4f6f9;
-            --text-muted: #a3b1cc;
+            --navy-dark: #0a1128;
+            --navy-mid: #111b3a;
+            --bg-white: #ffffff;
+            --bg-offwhite: #f8f9fb;
+            --text-dark: #0f172a;
+            --text-body: #334155;
+            --text-light: #f4f6f9;
+            --text-muted-light: #a3b1cc;
             --accent-gold: #c5a880;
-            --accent-gold-hover: #d8be98;
-            --border-subtle: rgba(197, 168, 128, 0.2);
+            --accent-gold-dark: #9e825a;
+            --border-light: #e2e8f0;
+            --border-dark: rgba(197, 168, 128, 0.22);
         }
 
         * {
@@ -117,10 +121,10 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background-color: var(--bg-primary);
-            color: var(--text-main);
+            background-color: var(--bg-white);
+            color: var(--text-body);
             line-height: 1.7;
-            font-weight: 300;
+            font-weight: 400;
             -webkit-font-smoothing: antialiased;
         }
 
@@ -138,11 +142,11 @@
 
         /* Header y Corrección de Baseline */
         header {
-            padding: 26px 0;
-            border-bottom: 1px solid var(--border-subtle);
+            padding: 24px 0;
+            border-bottom: 1px solid var(--border-dark);
             position: sticky;
             top: 0;
-            background-color: rgba(10, 17, 40, 0.95);
+            background-color: rgba(10, 17, 40, 0.97);
             backdrop-filter: blur(8px);
             z-index: 100;
         }
@@ -156,7 +160,7 @@
         .brand-logo {
             font-size: 1.55rem;
             line-height: 1;
-            color: var(--text-main);
+            color: var(--text-light);
             text-decoration: none;
             letter-spacing: 0.02em;
             display: inline-block;
@@ -173,7 +177,7 @@
         }
 
         nav a {
-            color: var(--text-muted);
+            color: var(--text-muted-light);
             text-decoration: none;
             font-size: 0.9rem;
             line-height: 1;
@@ -185,19 +189,31 @@
             color: var(--accent-gold);
         }
 
-        /* Hero Section */
+        /* Hero Section (Azul Noche) */
         .hero {
-            padding: 110px 0 90px;
-            border-bottom: 1px solid var(--border-subtle);
+            background-color: var(--navy-dark);
+            color: var(--text-light);
+            padding: 110px 0 95px;
+            border-bottom: 1px solid var(--border-dark);
         }
 
         .eyebrow {
             color: var(--accent-gold);
             text-transform: uppercase;
             letter-spacing: 0.16em;
-            font-size: 0.8rem;
+            font-size: 0.78rem;
             font-weight: 600;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
+            display: block;
+        }
+
+        .eyebrow-dark {
+            color: var(--accent-gold-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            font-size: 0.78rem;
+            font-weight: 600;
+            margin-bottom: 16px;
             display: block;
         }
 
@@ -206,20 +222,21 @@
             line-height: 1.2;
             max-width: 880px;
             margin-bottom: 28px;
-            color: var(--text-main);
+            color: var(--text-light);
         }
 
         .hero p {
             font-size: 1.15rem;
-            color: var(--text-muted);
+            color: var(--text-muted-light);
             max-width: 720px;
             margin-bottom: 42px;
+            font-weight: 300;
         }
 
         .btn-primary {
             display: inline-block;
             background-color: var(--accent-gold);
-            color: var(--bg-primary);
+            color: var(--navy-dark);
             padding: 15px 34px;
             font-weight: 600;
             text-decoration: none;
@@ -234,10 +251,17 @@
             color: var(--accent-gold);
         }
 
-        /* Sections General */
-        section {
-            padding: 90px 0;
-            border-bottom: 1px solid var(--border-subtle);
+        /* Secciones Claras (Blanco y Off-White) */
+        .section-white {
+            background-color: var(--bg-white);
+            padding: 95px 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .section-offwhite {
+            background-color: var(--bg-offwhite);
+            padding: 95px 0;
+            border-bottom: 1px solid var(--border-light);
         }
 
         .section-header {
@@ -246,13 +270,13 @@
         }
 
         .section-header h2 {
-            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            font-size: clamp(1.85rem, 3vw, 2.5rem);
             margin-bottom: 16px;
-            color: var(--text-main);
+            color: var(--text-dark);
         }
 
         .section-header p {
-            color: var(--text-muted);
+            color: var(--text-body);
             font-size: 1.05rem;
         }
 
@@ -264,22 +288,25 @@
         }
 
         .card {
-            background-color: var(--bg-secondary);
-            border: 1px solid var(--border-subtle);
+            background-color: var(--bg-white);
+            border: 1px solid var(--border-light);
+            border-top: 3px solid var(--navy-dark);
             padding: 38px 32px;
-            transition: transform 0.3s ease, border-color 0.3s ease;
+            box-shadow: 0 4px 20px rgba(10, 17, 40, 0.04);
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
         }
 
         .card:hover {
             transform: translateY(-4px);
-            border-color: var(--accent-gold);
+            border-top-color: var(--accent-gold);
+            box-shadow: 0 12px 28px rgba(10, 17, 40, 0.08);
         }
 
         .card-tag {
-            font-size: 0.75rem;
+            font-size: 0.74rem;
             text-transform: uppercase;
             letter-spacing: 0.14em;
-            color: var(--accent-gold);
+            color: var(--accent-gold-dark);
             font-weight: 600;
             margin-bottom: 14px;
             display: block;
@@ -288,33 +315,37 @@
         .card h3 {
             font-size: 1.4rem;
             margin-bottom: 16px;
-            color: var(--text-main);
+            color: var(--text-dark);
         }
 
         .card p {
-            color: var(--text-muted);
+            color: var(--text-body);
             font-size: 0.96rem;
         }
 
-        /* Methodology */
+        /* Methodology (Caja Azul Noche sobre Fondo Blanco) */
         .methodology-box {
-            background-color: var(--bg-secondary);
-            border-left: 3px solid var(--accent-gold);
-            padding: 44px;
+            background-color: var(--navy-dark);
+            color: var(--text-light);
+            border-left: 4px solid var(--accent-gold);
+            padding: 48px;
             display: grid;
             grid-template-columns: 1.2fr 1fr;
-            gap: 40px;
+            gap: 44px;
             align-items: center;
+            box-shadow: 0 16px 36px rgba(10, 17, 40, 0.12);
         }
 
         .methodology-box h3 {
-            font-size: 1.7rem;
-            margin-bottom: 16px;
+            font-size: 1.75rem;
+            margin-bottom: 18px;
+            color: var(--text-light);
         }
 
         .methodology-box p {
-            color: var(--text-muted);
+            color: var(--text-muted-light);
             margin-bottom: 16px;
+            font-weight: 300;
         }
 
         .methodology-list {
@@ -322,10 +353,11 @@
         }
 
         .methodology-list li {
-            padding: 12px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-            color: var(--text-main);
+            padding: 14px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-light);
             font-size: 0.95rem;
+            font-weight: 300;
         }
 
         .methodology-list li:last-child {
@@ -337,21 +369,26 @@
             font-weight: 600;
         }
 
-        /* Contact Section */
+        /* Contact Section (Azul Noche) */
         .contact-section {
             text-align: center;
-            background-color: var(--bg-secondary);
+            background-color: var(--navy-mid);
+            color: var(--text-light);
+            padding: 95px 0;
+            border-bottom: 1px solid var(--border-dark);
         }
 
         .contact-section h2 {
-            font-size: clamp(1.8rem, 3vw, 2.4rem);
+            font-size: clamp(1.85rem, 3vw, 2.45rem);
             margin-bottom: 18px;
+            color: var(--text-light);
         }
 
         .contact-section p {
-            color: var(--text-muted);
+            color: var(--text-muted-light);
             max-width: 640px;
-            margin: 0 auto 36px;
+            margin: 0 auto 38px;
+            font-weight: 300;
         }
 
         .contact-links {
@@ -374,14 +411,15 @@
 
         .btn-outline:hover {
             background-color: var(--accent-gold);
-            color: var(--bg-primary);
+            color: var(--navy-dark);
         }
 
-        /* Footer */
+        /* Footer (Azul Noche Profundo) */
         footer {
+            background-color: var(--navy-dark);
             padding: 48px 0;
             font-size: 0.88rem;
-            color: var(--text-muted);
+            color: var(--text-muted-light);
         }
 
         .footer-content {
@@ -392,6 +430,10 @@
             gap: 24px;
         }
 
+        .footer-content strong {
+            color: var(--text-light);
+        }
+
         .footer-links {
             display: flex;
             align-items: center;
@@ -400,7 +442,7 @@
         }
 
         .footer-links a {
-            color: var(--text-muted);
+            color: var(--text-muted-light);
             text-decoration: none;
             display: inline-flex;
             align-items: center;
@@ -424,7 +466,7 @@
             }
             .methodology-box {
                 grid-template-columns: 1fr;
-                padding: 28px;
+                padding: 30px;
             }
             .footer-content {
                 flex-direction: column;
@@ -457,10 +499,10 @@
             </div>
         </section>
 
-        <section id="brecha">
+        <section id="brecha" class="section-white">
             <div class="container">
                 <div class="section-header">
-                    <span class="eyebrow">El Punto Ciego Corporativo</span>
+                    <span class="eyebrow-dark">El Punto Ciego Corporativo</span>
                     <h2>La Brecha Operativa</h2>
                     <p>A medida que las organizaciones escalan, la C-Suite pierde visibilidad objetiva de lo que ocurre en el piso de venta o atención. Las auditorías tradicionales anuncian su llegada; nosotros observamos la realidad sin filtros.</p>
                 </div>
@@ -487,10 +529,10 @@
             </div>
         </section>
 
-        <section id="practicas">
+        <section id="practicas" class="section-offwhite">
             <div class="container">
                 <div class="section-header">
-                    <span class="eyebrow">Soluciones Especializadas</span>
+                    <span class="eyebrow-dark">Soluciones Especializadas</span>
                     <h2>Áreas de Práctica</h2>
                     <p>Intervenciones quirúrgicas diseñadas para proteger la rentabilidad, el valor de vida del cliente (LTV) y la continuidad operativa.</p>
                 </div>
@@ -517,7 +559,7 @@
             </div>
         </section>
 
-        <section id="metodologia">
+        <section id="metodologia" class="section-white">
             <div class="container">
                 <div class="methodology-box">
                     <div>
