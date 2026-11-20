@@ -415,7 +415,7 @@
             color: var(--navy-dark);
         }
 
-        /* Footer (Azul Noche Profundo) */
+        /* Footer (Azul Noche Profundo - Centrado) */
         footer {
             background-color: var(--navy-dark);
             padding: 48px 0;
@@ -425,10 +425,11 @@
 
         .footer-content {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
-            gap: 24px;
+            text-align: center;
+            gap: 16px;
         }
 
         .footer-content strong {
@@ -437,6 +438,7 @@
 
         .footer-links {
             display: flex;
+            justify-content: center;
             align-items: center;
             gap: 24px;
             flex-wrap: wrap;
@@ -544,10 +546,6 @@
             .methodology-box {
                 grid-template-columns: 1fr;
                 padding: 30px;
-            }
-            .footer-content {
-                flex-direction: column;
-                text-align: center;
             }
             .modal-box {
                 padding: 28px 22px;
