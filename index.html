@@ -3,249 +3,478 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>inteligencia.com | Auditoría CX & EX</title>
-    <meta name="description" content="Firma de alta consultoría especializada en auditoría de fricción operativa. Detectamos las fallas en CX y EX que sus métricas internas no registran.">
-    
-    <!-- SEO Técnico -->
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://inteligencia.com/">
-    
-    <!-- Open Graph (Para previsualización perfecta en LinkedIn y WhatsApp) -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://inteligencia.com/">
-    <meta property="og:title" content="inteligencia.com | Auditoría Operativa CX & EX">
-    <meta property="og:description" content="Detectamos las fallas sistémicas que sus métricas corporativas no registran. Inteligencia de campo y mitigación de riesgos.">
-    <!-- Aquí puedes agregar una imagen corporativa para cuando compartas el link -->
-    <!-- <meta property="og:image" content="https://inteligencia.com/imagen-social.jpg"> -->
-
-    <!-- Fuentes corporativas (Google Fonts) -->
+    <title>inteligencia.com | Auditoría Forense de Fricción Operativa (CX & EX)</title>
+    <meta name="description" content="Firma boutique especializada en auditoría táctica de fricción operativa, Customer Experience (CX) y Employee Experience (EX) para la alta dirección.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
-    <!-- Schema.org (JSON-LD para Google) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "inteligencia.com",
-      "url": "https://inteligencia.com/",
-      "description": "Firma de alta consultoría especializada en auditoría de fricción operativa, Experiencia de Cliente (CX) y Experiencia del Empleado (EX).",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Ciudad de México",
-        "addressCountry": "MX"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "email": "direccion@inteligencia.com",
-        "contactType": "Consulting and Auditing",
-        "availableLanguage": "Spanish"
-      },
-      "areaServed": "MX",
-      "priceRange": "$$$"
-    }
-    </script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
     <style>
-        /* Variables y Reseteo */
         :root {
-            --azul-noche: #0a1128;
-            --azul-corp: #121e3d;
-            --blanco: #ffffff;
-            --gris-claro: #f4f4f4;
-            --texto-oscuro: #222222;
-            --texto-gris: #555555;
-            --oro-sutil: #c5a880; /* Tono de acento ejecutivo */
+            --bg-primary: #0a1128;
+            --bg-secondary: #111b3a;
+            --bg-card: #162247;
+            --text-main: #f4f6f9;
+            --text-muted: #a3b1cc;
+            --accent-gold: #c5a880;
+            --accent-gold-hover: #d8be98;
+            --border-subtle: rgba(197, 168, 128, 0.2);
         }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; color: var(--texto-oscuro); background-color: var(--blanco); line-height: 1.6; }
-        h1, h2, h3, .logo { font-family: 'Playfair Display', serif; }
-        a { text-decoration: none; color: inherit; transition: 0.3s; }
-        
-        /* Contenedores y Botones */
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-        .btn-primary { display: inline-block; background-color: var(--oro-sutil); color: var(--azul-noche); padding: 1rem 2rem; font-weight: 600; font-size: 0.9rem; letter-spacing: 0.5px; text-transform: uppercase; border: none; cursor: pointer; }
-        .btn-primary:hover { background-color: #b0936b; }
-        .btn-secondary { display: inline-block; border: 1px solid var(--blanco); color: var(--blanco); padding: 1rem 2rem; font-weight: 600; font-size: 0.9rem; letter-spacing: 0.5px; text-transform: uppercase; margin-left: 1rem; }
-        .btn-secondary:hover { background-color: var(--blanco); color: var(--azul-noche); }
 
-        /* Navegación */
-        header { background-color: var(--azul-noche); color: var(--blanco); padding: 1.5rem 0; position: fixed; width: 100%; top: 0; z-index: 100; border-bottom: 1px solid rgba(255,255,255,0.1); }
-        /* AQUÍ ESTÁ EL AJUSTE MILIMÉTRICO: align-items: baseline */
-        .nav-container { display: flex; justify-content: space-between; align-items: baseline; }
-        .logo { font-size: 1.8rem; font-weight: 700; letter-spacing: -0.5px; }
-        .nav-links a { margin-left: 2rem; font-size: 0.9rem; font-weight: 300; }
-        .nav-links a:hover { color: var(--oro-sutil); }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.7;
+            font-weight: 300;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, .brand-logo {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        header {
+            padding: 28px 0;
+            border-bottom: 1px solid var(--border-subtle);
+            position: sticky;
+            top: 0;
+            background-color: rgba(10, 17, 40, 0.95);
+            backdrop-filter: blur(8px);
+            z-index: 100;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand-logo {
+            font-size: 1.5rem;
+            color: var(--text-main);
+            text-decoration: none;
+            letter-spacing: 0.02em;
+        }
+
+        .brand-logo span {
+            color: var(--accent-gold);
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-left: 32px;
+            transition: color 0.3s ease;
+            font-weight: 400;
+        }
+
+        nav a:hover {
+            color: var(--accent-gold);
+        }
 
         /* Hero Section */
-        .hero { background-color: var(--azul-noche); color: var(--blanco); padding: 12rem 0 8rem 0; }
-        .hero .pre-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--oro-sutil); margin-bottom: 1.5rem; display: block; }
-        .hero h1 { font-size: 4rem; line-height: 1.1; margin-bottom: 2rem; max-width: 900px; }
-        .hero p { font-size: 1.2rem; font-weight: 300; max-width: 700px; margin-bottom: 3rem; color: #d1d5db; }
-        
-        /* Secciones Generales */
-        section { padding: 8rem 0; }
-        .section-header { text-align: center; margin-bottom: 4rem; max-width: 800px; margin-left: auto; margin-right: auto; }
-        .section-header h2 { font-size: 2.8rem; margin-bottom: 1rem; color: var(--azul-noche); }
-        .section-header p { font-size: 1.1rem; color: var(--texto-gris); }
+        .hero {
+            padding: 110px 0 90px;
+            border-bottom: 1px solid var(--border-subtle);
+        }
 
-        /* Problema (Grid) */
-        .bg-light { background-color: var(--gris-claro); }
-        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; }
-        .card { background: var(--blanco); padding: 3rem 2rem; border-top: 4px solid var(--azul-noche); }
-        .card h3 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--azul-noche); }
-        .card p { font-size: 1rem; color: var(--texto-gris); }
-        
-        /* Casos de Estudio (Lista) */
-        .case-study { border-bottom: 1px solid #ddd; padding: 3rem 0; display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: start; }
-        .case-study:last-child { border-bottom: none; }
-        .case-title h3 { font-size: 1.8rem; color: var(--azul-noche); }
-        .case-content p strong { color: var(--azul-noche); font-family: 'Inter', sans-serif; }
-        .case-content p { margin-bottom: 1rem; color: var(--texto-gris); }
+        .eyebrow {
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: block;
+        }
 
-        /* Liderazgo */
-        .leadership { background-color: var(--azul-noche); color: var(--blanco); }
-        .leadership h2 { color: var(--blanco); margin-bottom: 2rem; }
-        .leadership p { color: #d1d5db; max-width: 700px; font-size: 1.1rem; margin-bottom: 2rem; }
+        .hero h1 {
+            font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+            line-height: 1.2;
+            max-width: 880px;
+            margin-bottom: 28px;
+            color: var(--text-main);
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            max-width: 720px;
+            margin-bottom: 42px;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--accent-gold);
+            color: var(--bg-primary);
+            padding: 15px 34px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.95rem;
+            letter-spacing: 0.03em;
+            transition: all 0.3s ease;
+            border: 1px solid var(--accent-gold);
+        }
+
+        .btn-primary:hover {
+            background-color: transparent;
+            color: var(--accent-gold);
+        }
+
+        /* Sections General */
+        section {
+            padding: 90px 0;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .section-header {
+            max-width: 720px;
+            margin-bottom: 56px;
+        }
+
+        .section-header h2 {
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            margin-bottom: 16px;
+            color: var(--text-main);
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        /* Grid Cards */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+        }
+
+        .card {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+            padding: 38px 32px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-gold);
+        }
+
+        .card-tag {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            color: var(--accent-gold);
+            font-weight: 600;
+            margin-bottom: 14px;
+            display: block;
+        }
+
+        .card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 16px;
+            color: var(--text-main);
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.96rem;
+        }
+
+        /* Methodology */
+        .methodology-box {
+            background-color: var(--bg-secondary);
+            border-left: 3px solid var(--accent-gold);
+            padding: 44px;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .methodology-box h3 {
+            font-size: 1.7rem;
+            margin-bottom: 16px;
+        }
+
+        .methodology-box p {
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        .methodology-list {
+            list-style: none;
+        }
+
+        .methodology-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            color: var(--text-main);
+            font-size: 0.95rem;
+        }
+
+        .methodology-list li:last-child {
+            border-bottom: none;
+        }
+
+        .methodology-list strong {
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            text-align: center;
+            background-color: var(--bg-secondary);
+        }
+
+        .contact-section h2 {
+            font-size: clamp(1.8rem, 3vw, 2.4rem);
+            margin-bottom: 18px;
+        }
+
+        .contact-section p {
+            color: var(--text-muted);
+            max-width: 640px;
+            margin: 0 auto 36px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .btn-outline {
+            display: inline-block;
+            border: 1px solid var(--accent-gold);
+            color: var(--accent-gold);
+            padding: 14px 30px;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--accent-gold);
+            color: var(--bg-primary);
+        }
 
         /* Footer */
-        footer { background-color: var(--azul-corp); color: var(--blanco); padding: 3rem 0; text-align: center; font-size: 0.9rem; }
-        footer p { opacity: 0.6; }
+        footer {
+            padding: 48px 0;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+        }
 
-        /* Responsive */
-        @media (max-width: 900px) {
-            .grid-3 { grid-template-columns: 1fr; }
-            .case-study { grid-template-columns: 1fr; gap: 1rem; }
-            .hero h1 { font-size: 2.8rem; }
-            .nav-links { display: none; }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        .footer-links {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-gold);
+        }
+
+        .linkedin-icon {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+            .methodology-box {
+                grid-template-columns: 1fr;
+                padding: 28px;
+            }
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- Navegación -->
     <header>
-        <div class="container nav-container">
-            <div class="logo">inteligencia.com</div>
-            <nav class="nav-links">
-                <a href="#problema">La Brecha Operativa</a>
+        <div class="container nav-wrapper">
+            <a href="#" class="brand-logo">inteligencia<span>.com</span></a>
+            <nav>
+                <a href="#brecha">La Brecha Operativa</a>
                 <a href="#practicas">Áreas de Práctica</a>
-                <a href="#casos">Evidencia de Campo</a>
-                <a href="#liderazgo">Liderazgo</a>
+                <a href="#metodologia">Metodología Forense</a>
+                <a href="#contacto">Contacto Directivo</a>
             </nav>
         </div>
     </header>
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="container">
-            <span class="pre-title">Firma Especializada en Auditoría de Fricción Operativa (CX & EX)</span>
-            <h1>Detectamos las fallas sistémicas que sus métricas internas no registran.</h1>
-            <p>Los tableros de control mienten cuando la primera línea falla. Identificamos, documentamos y neutralizamos la fricción silenciosa que destruye la retención de sus clientes y ahuyenta a su talento.</p>
-            <a href="mailto:direccion@inteligencia.com" class="btn-primary">Solicitar evaluación diagnóstica</a>
-        </div>
-    </section>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <span class="eyebrow">Inteligencia de Campo para la Alta Dirección</span>
+                <h1>Detectamos las fallas sistémicas que sus métricas internas no registran.</h1>
+                <p>Los tableros de control corporativos mienten cuando la primera línea de operación falla. Ejecutamos inmersiones encubiertas de rigor forense para diagnosticar y neutralizar la fricción operativa en Experiencia del Cliente (CX) y Experiencia del Empleado (EX).</p>
+                <a href="#contacto" class="btn-primary">Solicitar Diagnóstico Confidencial</a>
+            </div>
+        </section>
 
-    <!-- El Problema -->
-    <section id="problema" class="bg-light">
-        <div class="container">
-            <div class="section-header">
-                <h2>El riesgo de operar a ciegas</h2>
-                <p>Existe una brecha crítica entre la estrategia corporativa y la ejecución real en piso. Cuando la operación crece, la dirección general pierde visibilidad objetiva.</p>
-            </div>
-            <div class="grid-3">
-                <div class="card">
-                    <h3>Indicadores Filtrados<br>(Watermelon Metrics)</h3>
-                    <p>Los gerentes de sucursal protegen sus bonos. La información que llega a la alta dirección está maquillada, ocultando cuellos de botella (bottlenecks) críticos.</p>
+        <section id="brecha">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">El Punto Ciego Corporativo</span>
+                    <h2>La Brecha Operativa</h2>
+                    <p>A medida que las organizaciones escalan, la C-Suite pierde visibilidad objetiva de lo que ocurre en el piso de venta o atención. Las auditorías tradicionales anuncian su llegada; nosotros observamos la realidad sin filtros.</p>
                 </div>
-                <div class="card">
-                    <h3>Fricción Tecnológica<br>(Digital Drop-off)</h3>
-                    <p>Inversiones en canales de feedback que fallan en condiciones reales y nadie reporta. Si el canal cae, el cliente se va en silencio (Silent Churn).</p>
-                </div>
-                <div class="card">
-                    <h3>Fuga de Talento<br>(Early Attrition)</h3>
-                    <p>Procesos de integración (Onboarding) deficientes que disparan la rotación en las primeras semanas, invisibles para las auditorías tradicionales de Recursos Humanos.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Áreas de Práctica -->
-    <section id="practicas">
-        <div class="container">
-            <div class="section-header">
-                <h2>Inteligencia de Campo y Mitigación de Riesgos</h2>
-                <p>No proveemos encuestas de satisfacción. Ejecutamos auditorías tácticas encubiertas con evidencia forense para la toma de decisiones directivas.</p>
-            </div>
-            <div class="grid-3">
-                <div>
-                    <h3 style="color: var(--azul-noche); margin-bottom: 1rem;">I. Auditoría CX (Customer Journey)</h3>
-                    <p style="color: var(--texto-gris);">Diagnóstico del recorrido del cliente bajo estrés operativo. Evaluamos tiempos de respuesta, saturación de roles y protocolos de desescalamiento (De-escalation protocols).</p>
-                </div>
-                <div>
-                    <h3 style="color: var(--azul-noche); margin-bottom: 1rem;">II. Estrés Digital (Touchpoint Friction)</h3>
-                    <p style="color: var(--texto-gris);">Auditoría física y lógica de la infraestructura de retroalimentación. Detectamos QRs inactivos, flujos rotos y pérdida de datos (Dark Data).</p>
-                </div>
-                <div>
-                    <h3 style="color: var(--azul-noche); margin-bottom: 1rem;">III. Inmersión EX (Mystery Employee)</h3>
-                    <p style="color: var(--texto-gris);">Evaluación encubierta del ciclo de vida del empleado. Nos infiltramos para auditar el cumplimiento laboral y frenar la pérdida del Costo de Adquisición de Talento (Cost per Hire).</p>
-                </div>
-            </div>
-        </div>
-    </section>
+                <div class="grid-3">
+                    <div class="card">
+                        <span class="card-tag">Distorsión de Indicadores</span>
+                        <h3>Watermelon Metrics</h3>
+                        <p>Reportes ejecutivos que lucen en verde por fuera para proteger bonos gerenciales, pero que esconden operaciones en rojo por dentro: tiempos de espera críticos, protocolos omitidos y clientes insatisfechos.</p>
+                    </div>
 
-    <!-- Casos de Estudio -->
-    <section id="casos" class="bg-light">
-        <div class="container">
-            <div class="section-header">
-                <h2>Hallazgos Reales. Impacto Financiero.</h2>
-                <p>Casos recientes documentados en empresas líderes que operaban bajo la ilusión de normalidad.</p>
-            </div>
-            <div class="case-study">
-                <div class="case-title">
-                    <h3>Cadena Restaurantera (Retail)</h3>
-                </div>
-                <div class="case-content">
-                    <p><strong>El Hallazgo:</strong> Ruptura en el protocolo de piso. La recepción absorbió tareas operativas sin capacitación. Ante la fricción, la gerencia carecía de guiones de desescalamiento.</p>
-                    <p><strong>Impacto de Negocio:</strong> Destrucción inmediata del Lifetime Value (LTV) del cliente y riesgo reputacional. Corporativo ignoraba la falta de contención en sucursales de alto tráfico.</p>
-                </div>
-            </div>
-            <div class="case-study">
-                <div class="case-title">
-                    <h3>Franquicia Nacional de Panaderías</h3>
-                </div>
-                <div class="case-content">
-                    <p><strong>El Hallazgo:</strong> Infraestructura de retroalimentación simulada. Despliegue de material POP con códigos QR para evaluación de servicio con enlaces caídos (Error 404).</p>
-                    <p><strong>Impacto de Negocio:</strong> Ceguera total de datos (Dark Data). Desperdicio de presupuesto de marketing y amplificación de la fricción para el usuario.</p>
-                </div>
-            </div>
-            <div class="case-study">
-                <div class="case-title">
-                    <h3>Centro de Contacto Multinacional</h3>
-                </div>
-                <div class="case-content">
-                    <p><strong>El Hallazgo:</strong> Falla crítica en Onboarding. Capacitación impartida con material inaccesible, equipo con riesgo sanitario e irregularidades en nómina.</p>
-                    <p><strong>Impacto de Negocio:</strong> Disparo del abandono de personal (Churn) en semana 3 y alto riesgo de incumplimiento de SLAs (Service Level Agreements) frente al cliente contratante.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <div class="card">
+                        <span class="card-tag">Puntos Ciegos Digitales</span>
+                        <h3>Dark Data</h3>
+                        <p>Canales de retroalimentación, códigos QR y flujos digitales rotos o desatendidos en sucursal que operan en silencio, anulando la voz del cliente y desperdiciando presupuestos de retención.</p>
+                    </div>
 
-    <!-- Liderazgo / Perfil -->
-    <section id="liderazgo" class="leadership">
-        <div class="container">
-            <h2>Liderazgo Estratégico</h2>
-            <p>La firma está dirigida por <strong>Sergio Lubezky</strong>, especialista en diagnóstico operativo con experiencia directa en la detección de fricciones sistémicas. Entendemos que la verdadera auditoría no se hace desde una hoja de cálculo, sino infiltrándose en la línea frontal de su negocio.</p>
-            <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="btn-primary" style="background-color: var(--blanco); color: var(--azul-noche);">Ver perfil en LinkedIn</a>
-        </div>
-    </section>
+                    <div class="card">
+                        <span class="card-tag">Fuga de Capital Humano</span>
+                        <h3>Early Attrition</h3>
+                        <p>Rotación temprana disparada durante las primeras semanas por procesos de reclutamiento e integración (Onboarding) deficientes, destruyendo el retorno sobre el Costo de Adquisición de Talento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Footer -->
+        <section id="practicas">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">Soluciones Especializadas</span>
+                    <h2>Áreas de Práctica</h2>
+                    <p>Intervenciones quirúrgicas diseñadas para proteger la rentabilidad, el valor de vida del cliente (LTV) y la continuidad operativa.</p>
+                </div>
+
+                <div class="grid-3">
+                    <div class="card">
+                        <span class="card-tag">Práctica 01</span>
+                        <h3>Auditoría CX (Customer Journey)</h3>
+                        <p>Evaluación del recorrido real del cliente bajo condiciones de estrés operativo. Medimos tiempos de respuesta, saturación de roles y ejecución de protocolos de contención y desescalamiento en piso.</p>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-tag">Práctica 02</span>
+                        <h3>Estrés Digital (Touchpoint Friction)</h3>
+                        <p>Auditoría física y lógica de toda la infraestructura de contacto en sucursal (QRs, apps, encuestas, quioscos) para garantizar la captura íntegra de datos y eliminar fricciones tecnológicas.</p>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-tag">Práctica 03</span>
+                        <h3>Inmersión EX (Employee Mystery Shopping)</h3>
+                        <p>Infiltración controlada en el ciclo de vida del colaborador—desde la postulación hasta el piso de operación—para auditar el cumplimiento laboral, el liderazgo intermedio y la retención temprana.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="metodologia">
+            <div class="container">
+                <div class="methodology-box">
+                    <div>
+                        <span class="eyebrow">Rigor Ejecutivo</span>
+                        <h3>De la Auditoría Forense al Control Operativo</h3>
+                        <p>No entregamos presentaciones genéricas de escritorio ni encuestas de percepción superficial. Documentamos evidencia factual en campo y entregamos inteligencia accionable directamente a CEOs, COOs y Consejos de Administración.</p>
+                        <p>Cuando el diagnóstico exige ejecución inmediata para frenar pérdidas, operamos en sinergia directa con nuestra práctica de liderazgo interino (<a href="https://liderazgointerino.com" target="_blank" rel="noopener noreferrer" style="color: var(--accent-gold); text-decoration: none; border-bottom: 1px solid var(--accent-gold);">liderazgointerino.com</a>) para asumir el control táctico y estabilizar la operación.</p>
+                    </div>
+                    <ul class="methodology-list">
+                        <li><strong>01. Inmersión Encubierta:</strong> Observación sin aviso en horarios pico y escenarios de alta fricción.</li>
+                        <li><strong>02. Evidencia Documentada:</strong> Trazabilidad exacta de fallas de protocolo, tiempos y puntos de ruptura.</li>
+                        <li><strong>03. Brief de Riesgo Ejecutivo:</strong> Diagnóstico confidencial con impacto financiero estimado y plan de contención.</li>
+                        <li><strong>04. Neutralidad Absoluta:</strong> Sin compromisos políticos internos; reportamos únicamente a la alta dirección.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section">
+            <div class="container">
+                <span class="eyebrow">Confidencialidad Estricta</span>
+                <h2>Inicie una Conversación Ejecutiva</h2>
+                <p>Si sospecha que sus indicadores internos no reflejan la realidad operativa de sus sucursales o centros de atención, conversemos de manera confidencial.</p>
+                <div class="contact-links">
+                    <a href="mailto:direccion@inteligencia.com" class="btn-primary">direccion@inteligencia.com</a>
+                    <a href="https://www.linkedin.com/in/sergiolubezky" target="_blank" rel="noopener noreferrer" class="btn-outline">Conectar con Dirección en LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <div class="container">
-            <p>© 2026 inteligencia.com — Business & Operational Intelligence. Ciudad de México.</p>
-            <p style="margin-top: 0.5rem; opacity: 1;">Contacto: <a href="mailto:direccion@inteligencia.com">direccion@inteligencia.com</a></p>
+        <div class="container footer-content">
+            <div>
+                &copy; 2026 <strong>inteligencia.com</strong> &mdash; Auditoría de Fricción Operativa &amp; Turnaround Management. Todos los derechos reservados.
+            </div>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/company/inteligencia-com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de inteligencia.com">
+                    <svg class="linkedin-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                    </svg>
+                    <span>inteligencia.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/sergiolubezky" target="_blank" rel="noopener noreferrer" aria-label="Perfil de LinkedIn de Sergio Lubezky">
+                    <svg class="linkedin-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                    </svg>
+                    <span>Sergio Lubezky</span>
+                </a>
+            </div>
         </div>
     </footer>
 
