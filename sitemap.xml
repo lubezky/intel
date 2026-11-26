@@ -1,9 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://inteligencia.com/</loc>
-    <lastmod>2026-11-19</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://inteligencia.com/empresa-en-crisis/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://inteligencia.com/img/efectosandia.jpeg</image:loc>
+      <image:title>El Efecto Sandía en los KPIs y Reportes Corporativos</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://inteligencia.com/falta-de-liderazgo/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://inteligencia.com/img/mitocontrol.jpeg</image:loc>
+      <image:title>El Mito del Control Desde el Piso 40</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://inteligencia.com/problemas-operativos/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://inteligencia.com/img/churn.jpeg</image:loc>
+      <image:title>La Fuga Silenciosa - Cuando el Cliente se Va sin Dejar Rastro</image:title>
+    </image:image>
   </url>
 </urlset>
